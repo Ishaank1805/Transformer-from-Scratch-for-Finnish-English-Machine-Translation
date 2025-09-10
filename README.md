@@ -62,7 +62,7 @@ scikit-learn>=0.24.0
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Ishaank1805/Transformer-from-Scratch-for-Finnish-English-Machine-Translation.git
 ```
 
 2. Install dependencies:
