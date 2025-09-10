@@ -1,0 +1,1310 @@
+==========================================
+SLURM_JOB_ID = 2489285
+SLURM_NODELIST = gnode082
+SLURM_JOB_GPUS = 0
+==========================================
+==================================================
+Advanced NLP Assignment 1: Transformer from Scratch
+==================================================
+Creating directories...
+Moving data files to data directory...
+
+==================================================
+PHASE 1: Training Transformers
+==================================================
+
+Training Transformer with RoPE...
+--------------------------------------------------
+Loading and preparing data...
+Data split: Train=80000, Val=10000, Test=10000
+Source vocabulary size: 64786
+Target vocabulary size: 31522
+Special tokens: PAD=0, SOS=1, EOS=2, UNK=3
+Training on cuda
+Model parameters: 109,591,330
+Using Noam scheduler with warmup_steps=8000
+Using Label Smoothing Loss with smoothing=0.1
+Weight decay: 0.0001
+Dropout rate: 0.3
+Gradient clipping: 0.5
+Early stopping patience: 5 epochs
+Minimum delta for improvement: 0.01
+
+==================================================
+Epoch 1/30
+==================================================
+Epoch: 1, Batch: 100, Avg Loss: 10.2583, LR: 0.000006, Avg Grad Norm: 2.40 (101 finite gradients)
+Epoch: 1, Batch: 200, Avg Loss: 10.0400, LR: 0.000012, Avg Grad Norm: 2.26 (201 finite gradients)
+Epoch: 1, Batch: 300, Avg Loss: 9.7754, LR: 0.000019, Avg Grad Norm: 2.24 (301 finite gradients)
+Epoch: 1, Batch: 400, Avg Loss: 9.4588, LR: 0.000025, Avg Grad Norm: 2.23 (401 finite gradients)
+Epoch: 1, Batch: 500, Avg Loss: 9.1186, LR: 0.000031, Avg Grad Norm: 2.16 (501 finite gradients)
+Epoch: 1, Batch: 600, Avg Loss: 8.8254, LR: 0.000037, Avg Grad Norm: 1.96 (601 finite gradients)
+Epoch: 1, Batch: 700, Avg Loss: 8.6041, LR: 0.000043, Avg Grad Norm: 1.81 (701 finite gradients)
+Epoch: 1, Batch: 800, Avg Loss: 8.4201, LR: 0.000049, Avg Grad Norm: 1.74 (801 finite gradients)
+Epoch: 1, Batch: 900, Avg Loss: 8.2635, LR: 0.000056, Avg Grad Norm: 1.77 (901 finite gradients)
+Epoch: 1, Batch: 1000, Avg Loss: 8.1274, LR: 0.000062, Avg Grad Norm: 1.85 (1001 finite gradients)
+Epoch: 1, Batch: 1100, Avg Loss: 8.0055, LR: 0.000068, Avg Grad Norm: 1.94 (1101 finite gradients)
+Epoch: 1, Batch: 1200, Avg Loss: 7.8957, LR: 0.000074, Avg Grad Norm: 2.03 (1201 finite gradients)
+Epoch: 1, Batch: 1300, Avg Loss: 7.7971, LR: 0.000080, Avg Grad Norm: 2.09 (1301 finite gradients)
+Epoch: 1, Batch: 1400, Avg Loss: 7.7070, LR: 0.000087, Avg Grad Norm: 2.15 (1401 finite gradients)
+Epoch: 1, Batch: 1500, Avg Loss: 7.6255, LR: 0.000093, Avg Grad Norm: 2.19 (1501 finite gradients)
+Epoch: 1, Batch: 1600, Avg Loss: 7.5498, LR: 0.000099, Avg Grad Norm: 2.23 (1601 finite gradients)
+Epoch: 1, Batch: 1700, Avg Loss: 7.4807, LR: 0.000105, Avg Grad Norm: 2.26 (1701 finite gradients)
+Epoch: 1, Batch: 1800, Avg Loss: 7.4167, LR: 0.000111, Avg Grad Norm: 2.29 (1801 finite gradients)
+Epoch: 1, Batch: 1900, Avg Loss: 7.3578, LR: 0.000117, Avg Grad Norm: 2.32 (1901 finite gradients)
+Epoch: 1, Batch: 2000, Avg Loss: 7.3015, LR: 0.000124, Avg Grad Norm: 2.34 (2001 finite gradients)
+Epoch: 1, Batch: 2100, Avg Loss: 7.2493, LR: 0.000130, Avg Grad Norm: 2.37 (2101 finite gradients)
+Epoch: 1, Batch: 2200, Avg Loss: 7.2010, LR: 0.000136, Avg Grad Norm: 2.39 (2201 finite gradients)
+Epoch: 1, Batch: 2300, Avg Loss: 7.1565, LR: 0.000142, Avg Grad Norm: 2.41 (2301 finite gradients)
+Epoch: 1, Batch: 2400, Avg Loss: 7.1133, LR: 0.000148, Avg Grad Norm: 2.43 (2401 finite gradients)
+Train Loss: 7.0729, Val Loss: 5.9439
+Val Perplexity: 381.41
+Learning Rate: 0.000154
+Average Gradient Norm: 2.44
+Validation loss improved from inf to 5.9439
+New best model saved! Val loss: 5.9439, Perplexity: 381.41
+
+==================================================
+Epoch 2/30
+==================================================
+Epoch: 2, Batch: 100, Avg Loss: 6.0777, LR: 0.000161, Avg Grad Norm: 3.06 (101 finite gradients)
+Epoch: 2, Batch: 200, Avg Loss: 6.0564, LR: 0.000167, Avg Grad Norm: 3.07 (201 finite gradients)
+Epoch: 2, Batch: 300, Avg Loss: 6.0546, LR: 0.000173, Avg Grad Norm: 3.07 (301 finite gradients)
+Epoch: 2, Batch: 400, Avg Loss: 6.0461, LR: 0.000179, Avg Grad Norm: 3.07 (401 finite gradients)
+Epoch: 2, Batch: 500, Avg Loss: 6.0359, LR: 0.000185, Avg Grad Norm: 3.07 (501 finite gradients)
+Epoch: 2, Batch: 600, Avg Loss: 6.0311, LR: 0.000192, Avg Grad Norm: 3.06 (601 finite gradients)
+Epoch: 2, Batch: 700, Avg Loss: 6.0282, LR: 0.000198, Avg Grad Norm: 3.05 (701 finite gradients)
+Epoch: 2, Batch: 800, Avg Loss: 6.0228, LR: 0.000204, Avg Grad Norm: 3.03 (801 finite gradients)
+Epoch: 2, Batch: 900, Avg Loss: 6.0174, LR: 0.000210, Avg Grad Norm: 3.02 (901 finite gradients)
+Epoch: 2, Batch: 1000, Avg Loss: 6.0112, LR: 0.000216, Avg Grad Norm: 3.00 (1001 finite gradients)
+Epoch: 2, Batch: 1100, Avg Loss: 6.0076, LR: 0.000222, Avg Grad Norm: 2.99 (1101 finite gradients)
+Epoch: 2, Batch: 1200, Avg Loss: 6.0011, LR: 0.000229, Avg Grad Norm: 2.98 (1201 finite gradients)
+Epoch: 2, Batch: 1300, Avg Loss: 5.9977, LR: 0.000235, Avg Grad Norm: 2.97 (1301 finite gradients)
+Epoch: 2, Batch: 1400, Avg Loss: 5.9948, LR: 0.000241, Avg Grad Norm: 2.96 (1401 finite gradients)
+Epoch: 2, Batch: 1500, Avg Loss: 5.9910, LR: 0.000247, Avg Grad Norm: 2.96 (1501 finite gradients)
+Epoch: 2, Batch: 1600, Avg Loss: 5.9882, LR: 0.000253, Avg Grad Norm: 2.95 (1601 finite gradients)
+Epoch: 2, Batch: 1700, Avg Loss: 5.9838, LR: 0.000259, Avg Grad Norm: 2.94 (1701 finite gradients)
+Epoch: 2, Batch: 1800, Avg Loss: 5.9810, LR: 0.000266, Avg Grad Norm: 2.94 (1801 finite gradients)
+Epoch: 2, Batch: 1900, Avg Loss: 5.9773, LR: 0.000272, Avg Grad Norm: 2.93 (1901 finite gradients)
+Epoch: 2, Batch: 2000, Avg Loss: 5.9750, LR: 0.000278, Avg Grad Norm: 2.92 (2001 finite gradients)
+Epoch: 2, Batch: 2100, Avg Loss: 5.9716, LR: 0.000284, Avg Grad Norm: 2.92 (2101 finite gradients)
+Epoch: 2, Batch: 2200, Avg Loss: 5.9686, LR: 0.000290, Avg Grad Norm: 2.92 (2200 finite gradients)
+Epoch: 2, Batch: 2300, Avg Loss: 5.9648, LR: 0.000297, Avg Grad Norm: 2.91 (2300 finite gradients)
+Epoch: 2, Batch: 2400, Avg Loss: 5.9621, LR: 0.000303, Avg Grad Norm: 2.91 (2400 finite gradients)
+Train Loss: 5.9591, Val Loss: 5.7393
+Val Perplexity: 310.86
+Learning Rate: 0.000309
+Average Gradient Norm: 2.91
+Validation loss improved from 5.9439 to 5.7393
+New best model saved! Val loss: 5.7393, Perplexity: 310.86
+
+==================================================
+Epoch 3/30
+==================================================
+Epoch: 3, Batch: 100, Avg Loss: 5.8510, LR: 0.000315, Avg Grad Norm: 3.10 (101 finite gradients)
+Epoch: 3, Batch: 200, Avg Loss: 5.8474, LR: 0.000321, Avg Grad Norm: 3.15 (201 finite gradients)
+Epoch: 3, Batch: 300, Avg Loss: 5.8591, LR: 0.000327, Avg Grad Norm: 3.21 (301 finite gradients)
+Epoch: 3, Batch: 400, Avg Loss: 5.8575, LR: 0.000334, Avg Grad Norm: 3.22 (401 finite gradients)
+Epoch: 3, Batch: 500, Avg Loss: 5.8569, LR: 0.000340, Avg Grad Norm: 3.22 (501 finite gradients)
+Epoch: 3, Batch: 600, Avg Loss: 5.8607, LR: 0.000346, Avg Grad Norm: 3.20 (601 finite gradients)
+Epoch: 3, Batch: 700, Avg Loss: 5.8640, LR: 0.000352, Avg Grad Norm: 3.17 (701 finite gradients)
+Epoch: 3, Batch: 800, Avg Loss: 5.8641, LR: 0.000358, Avg Grad Norm: 3.15 (801 finite gradients)
+Epoch: 3, Batch: 900, Avg Loss: 5.8652, LR: 0.000364, Avg Grad Norm: 3.14 (901 finite gradients)
+Epoch: 3, Batch: 1000, Avg Loss: 5.8682, LR: 0.000371, Avg Grad Norm: 3.11 (1001 finite gradients)
+Epoch: 3, Batch: 1100, Avg Loss: 5.8684, LR: 0.000377, Avg Grad Norm: 3.09 (1101 finite gradients)
+Epoch: 3, Batch: 1200, Avg Loss: 5.8702, LR: 0.000383, Avg Grad Norm: 3.07 (1201 finite gradients)
+Epoch: 3, Batch: 1300, Avg Loss: 5.8697, LR: 0.000389, Avg Grad Norm: 3.05 (1301 finite gradients)
+Epoch: 3, Batch: 1400, Avg Loss: 5.8686, LR: 0.000395, Avg Grad Norm: 3.03 (1401 finite gradients)
+Epoch: 3, Batch: 1500, Avg Loss: 5.8679, LR: 0.000402, Avg Grad Norm: 3.02 (1501 finite gradients)
+Epoch: 3, Batch: 1600, Avg Loss: 5.8681, LR: 0.000408, Avg Grad Norm: 3.01 (1600 finite gradients)
+Epoch: 3, Batch: 1700, Avg Loss: 5.8683, LR: 0.000414, Avg Grad Norm: 2.99 (1700 finite gradients)
+Epoch: 3, Batch: 1800, Avg Loss: 5.8672, LR: 0.000420, Avg Grad Norm: 2.98 (1800 finite gradients)
+Epoch: 3, Batch: 1900, Avg Loss: 5.8676, LR: 0.000426, Avg Grad Norm: 2.97 (1900 finite gradients)
+Epoch: 3, Batch: 2000, Avg Loss: 5.8682, LR: 0.000432, Avg Grad Norm: 2.96 (2000 finite gradients)
+Epoch: 3, Batch: 2100, Avg Loss: 5.8674, LR: 0.000439, Avg Grad Norm: 2.95 (2100 finite gradients)
+Epoch: 3, Batch: 2200, Avg Loss: 5.8658, LR: 0.000445, Avg Grad Norm: 2.94 (2200 finite gradients)
+Epoch: 3, Batch: 2300, Avg Loss: 5.8656, LR: 0.000451, Avg Grad Norm: 2.93 (2300 finite gradients)
+Epoch: 3, Batch: 2400, Avg Loss: 5.8643, LR: 0.000457, Avg Grad Norm: 2.92 (2400 finite gradients)
+Train Loss: 5.8642, Val Loss: 5.6841
+Val Perplexity: 294.16
+Learning Rate: 0.000463
+Average Gradient Norm: 2.91
+Validation loss improved from 5.7393 to 5.6841
+New best model saved! Val loss: 5.6841, Perplexity: 294.16
+
+==================================================
+Epoch 4/30
+==================================================
+Epoch: 4, Batch: 100, Avg Loss: 5.7536, LR: 0.000469, Avg Grad Norm: 2.91 (101 finite gradients)
+Epoch: 4, Batch: 200, Avg Loss: 5.7821, LR: 0.000476, Avg Grad Norm: 2.96 (201 finite gradients)
+Epoch: 4, Batch: 300, Avg Loss: 5.7921, LR: 0.000482, Avg Grad Norm: 3.03 (301 finite gradients)
+Epoch: 4, Batch: 400, Avg Loss: 5.7971, LR: 0.000488, Avg Grad Norm: 3.05 (401 finite gradients)
+Epoch: 4, Batch: 500, Avg Loss: 5.7993, LR: 0.000494, Avg Grad Norm: 3.05 (501 finite gradients)
+Epoch: 4, Batch: 600, Avg Loss: 5.8044, LR: 0.000491, Avg Grad Norm: 3.03 (601 finite gradients)
+Epoch: 4, Batch: 700, Avg Loss: 5.8082, LR: 0.000488, Avg Grad Norm: 2.99 (701 finite gradients)
+Epoch: 4, Batch: 800, Avg Loss: 5.8084, LR: 0.000485, Avg Grad Norm: 2.96 (801 finite gradients)
+Epoch: 4, Batch: 900, Avg Loss: 5.8113, LR: 0.000482, Avg Grad Norm: 2.94 (901 finite gradients)
+Epoch: 4, Batch: 1000, Avg Loss: 5.8131, LR: 0.000479, Avg Grad Norm: 2.92 (1001 finite gradients)
+Epoch: 4, Batch: 1100, Avg Loss: 5.8155, LR: 0.000477, Avg Grad Norm: 2.90 (1101 finite gradients)
+Epoch: 4, Batch: 1200, Avg Loss: 5.8183, LR: 0.000474, Avg Grad Norm: 2.89 (1200 finite gradients)
+Epoch: 4, Batch: 1300, Avg Loss: 5.8190, LR: 0.000471, Avg Grad Norm: 2.87 (1300 finite gradients)
+Epoch: 4, Batch: 1400, Avg Loss: 5.8185, LR: 0.000468, Avg Grad Norm: 2.86 (1400 finite gradients)
+Epoch: 4, Batch: 1500, Avg Loss: 5.8173, LR: 0.000466, Avg Grad Norm: 2.85 (1499 finite gradients)
+Epoch: 4, Batch: 1600, Avg Loss: 5.8175, LR: 0.000463, Avg Grad Norm: 2.85 (1599 finite gradients)
+Epoch: 4, Batch: 1700, Avg Loss: 5.8182, LR: 0.000461, Avg Grad Norm: 2.84 (1699 finite gradients)
+Epoch: 4, Batch: 1800, Avg Loss: 5.8170, LR: 0.000458, Avg Grad Norm: 2.84 (1799 finite gradients)
+Epoch: 4, Batch: 1900, Avg Loss: 5.8166, LR: 0.000456, Avg Grad Norm: 2.84 (1899 finite gradients)
+Epoch: 4, Batch: 2000, Avg Loss: 5.8170, LR: 0.000453, Avg Grad Norm: 2.83 (1999 finite gradients)
+Epoch: 4, Batch: 2100, Avg Loss: 5.8167, LR: 0.000451, Avg Grad Norm: 2.84 (2099 finite gradients)
+Epoch: 4, Batch: 2200, Avg Loss: 5.8163, LR: 0.000449, Avg Grad Norm: 2.84 (2199 finite gradients)
+Epoch: 4, Batch: 2300, Avg Loss: 5.8159, LR: 0.000446, Avg Grad Norm: 2.84 (2299 finite gradients)
+Epoch: 4, Batch: 2400, Avg Loss: 5.8150, LR: 0.000444, Avg Grad Norm: 2.84 (2399 finite gradients)
+Train Loss: 5.8144, Val Loss: 5.6224
+Val Perplexity: 276.55
+Learning Rate: 0.000442
+Average Gradient Norm: 2.85
+Validation loss improved from 5.6841 to 5.6224
+New best model saved! Val loss: 5.6224, Perplexity: 276.55
+
+==================================================
+Epoch 5/30
+==================================================
+Epoch: 5, Batch: 100, Avg Loss: 5.7084, LR: 0.000440, Avg Grad Norm: 3.30 (101 finite gradients)
+Epoch: 5, Batch: 200, Avg Loss: 5.7164, LR: 0.000438, Avg Grad Norm: 3.40 (201 finite gradients)
+Epoch: 5, Batch: 300, Avg Loss: 5.7285, LR: 0.000435, Avg Grad Norm: 3.45 (301 finite gradients)
+Epoch: 5, Batch: 400, Avg Loss: 5.7404, LR: 0.000433, Avg Grad Norm: 3.49 (401 finite gradients)
+Epoch: 5, Batch: 500, Avg Loss: 5.7449, LR: 0.000431, Avg Grad Norm: 3.50 (501 finite gradients)
+Epoch: 5, Batch: 600, Avg Loss: 5.7506, LR: 0.000429, Avg Grad Norm: 3.49 (601 finite gradients)
+Epoch: 5, Batch: 700, Avg Loss: 5.7566, LR: 0.000427, Avg Grad Norm: 3.48 (701 finite gradients)
+Epoch: 5, Batch: 800, Avg Loss: 5.7609, LR: 0.000425, Avg Grad Norm: 3.47 (801 finite gradients)
+Epoch: 5, Batch: 900, Avg Loss: 5.7639, LR: 0.000423, Avg Grad Norm: 3.45 (901 finite gradients)
+Epoch: 5, Batch: 1000, Avg Loss: 5.7660, LR: 0.000421, Avg Grad Norm: 3.43 (1001 finite gradients)
+Epoch: 5, Batch: 1100, Avg Loss: 5.7679, LR: 0.000419, Avg Grad Norm: 3.42 (1101 finite gradients)
+Epoch: 5, Batch: 1200, Avg Loss: 5.7691, LR: 0.000418, Avg Grad Norm: 3.41 (1201 finite gradients)
+Epoch: 5, Batch: 1300, Avg Loss: 5.7692, LR: 0.000416, Avg Grad Norm: 3.40 (1301 finite gradients)
+Epoch: 5, Batch: 1400, Avg Loss: 5.7713, LR: 0.000414, Avg Grad Norm: 3.40 (1401 finite gradients)
+Epoch: 5, Batch: 1500, Avg Loss: 5.7722, LR: 0.000412, Avg Grad Norm: 3.40 (1501 finite gradients)
+Epoch: 5, Batch: 1600, Avg Loss: 5.7745, LR: 0.000410, Avg Grad Norm: 3.41 (1601 finite gradients)
+Epoch: 5, Batch: 1700, Avg Loss: 5.7741, LR: 0.000409, Avg Grad Norm: 3.41 (1701 finite gradients)
+Epoch: 5, Batch: 1800, Avg Loss: 5.7746, LR: 0.000407, Avg Grad Norm: 3.41 (1801 finite gradients)
+Epoch: 5, Batch: 1900, Avg Loss: 5.7749, LR: 0.000405, Avg Grad Norm: 3.41 (1901 finite gradients)
+Epoch: 5, Batch: 2000, Avg Loss: 5.7755, LR: 0.000403, Avg Grad Norm: 3.42 (2001 finite gradients)
+Epoch: 5, Batch: 2100, Avg Loss: 5.7751, LR: 0.000402, Avg Grad Norm: 3.42 (2101 finite gradients)
+Epoch: 5, Batch: 2200, Avg Loss: 5.7748, LR: 0.000400, Avg Grad Norm: 3.42 (2201 finite gradients)
+Epoch: 5, Batch: 2300, Avg Loss: 5.7743, LR: 0.000398, Avg Grad Norm: 3.43 (2301 finite gradients)
+Epoch: 5, Batch: 2400, Avg Loss: 5.7749, LR: 0.000397, Avg Grad Norm: 3.43 (2401 finite gradients)
+Train Loss: 5.7745, Val Loss: 5.6039
+Val Perplexity: 271.47
+Learning Rate: 0.000395
+Average Gradient Norm: 3.43
+Validation loss improved from 5.6224 to 5.6039
+New best model saved! Val loss: 5.6039, Perplexity: 271.47
+
+==================================================
+Epoch 6/30
+==================================================
+Epoch: 6, Batch: 100, Avg Loss: 5.7181, LR: 0.000394, Avg Grad Norm: 3.72 (100 finite gradients)
+Epoch: 6, Batch: 200, Avg Loss: 5.7107, LR: 0.000392, Avg Grad Norm: 3.93 (200 finite gradients)
+Epoch: 6, Batch: 300, Avg Loss: 5.7114, LR: 0.000391, Avg Grad Norm: 4.03 (300 finite gradients)
+Epoch: 6, Batch: 400, Avg Loss: 5.7200, LR: 0.000389, Avg Grad Norm: 4.09 (400 finite gradients)
+Epoch: 6, Batch: 500, Avg Loss: 5.7275, LR: 0.000388, Avg Grad Norm: 4.10 (500 finite gradients)
+Epoch: 6, Batch: 600, Avg Loss: 5.7345, LR: 0.000386, Avg Grad Norm: 4.11 (600 finite gradients)
+Epoch: 6, Batch: 700, Avg Loss: 5.7390, LR: 0.000385, Avg Grad Norm: 4.09 (700 finite gradients)
+Epoch: 6, Batch: 800, Avg Loss: 5.7412, LR: 0.000383, Avg Grad Norm: 4.08 (800 finite gradients)
+Epoch: 6, Batch: 900, Avg Loss: 5.7408, LR: 0.000382, Avg Grad Norm: 4.07 (900 finite gradients)
+Epoch: 6, Batch: 1000, Avg Loss: 5.7431, LR: 0.000380, Avg Grad Norm: 4.06 (1000 finite gradients)
+Epoch: 6, Batch: 1100, Avg Loss: 5.7455, LR: 0.000379, Avg Grad Norm: 4.04 (1100 finite gradients)
+Epoch: 6, Batch: 1200, Avg Loss: 5.7483, LR: 0.000378, Avg Grad Norm: 4.04 (1200 finite gradients)
+Epoch: 6, Batch: 1300, Avg Loss: 5.7507, LR: 0.000376, Avg Grad Norm: 4.03 (1300 finite gradients)
+Epoch: 6, Batch: 1400, Avg Loss: 5.7520, LR: 0.000375, Avg Grad Norm: 4.02 (1400 finite gradients)
+Epoch: 6, Batch: 1500, Avg Loss: 5.7528, LR: 0.000373, Avg Grad Norm: 4.01 (1500 finite gradients)
+Epoch: 6, Batch: 1600, Avg Loss: 5.7546, LR: 0.000372, Avg Grad Norm: 4.00 (1600 finite gradients)
+Epoch: 6, Batch: 1700, Avg Loss: 5.7553, LR: 0.000371, Avg Grad Norm: 4.00 (1700 finite gradients)
+Epoch: 6, Batch: 1800, Avg Loss: 5.7556, LR: 0.000370, Avg Grad Norm: 4.00 (1800 finite gradients)
+Epoch: 6, Batch: 1900, Avg Loss: 5.7564, LR: 0.000368, Avg Grad Norm: 3.99 (1900 finite gradients)
+Epoch: 6, Batch: 2000, Avg Loss: 5.7583, LR: 0.000367, Avg Grad Norm: 3.99 (2000 finite gradients)
+Epoch: 6, Batch: 2100, Avg Loss: 5.7590, LR: 0.000366, Avg Grad Norm: 3.99 (2100 finite gradients)
+Epoch: 6, Batch: 2200, Avg Loss: 5.7605, LR: 0.000364, Avg Grad Norm: 3.99 (2199 finite gradients)
+Epoch: 6, Batch: 2300, Avg Loss: 5.7609, LR: 0.000363, Avg Grad Norm: 4.00 (2299 finite gradients)
+Epoch: 6, Batch: 2400, Avg Loss: 5.7610, LR: 0.000362, Avg Grad Norm: 4.00 (2399 finite gradients)
+Train Loss: 5.7622, Val Loss: 5.6008
+Val Perplexity: 270.64
+Learning Rate: 0.000361
+Average Gradient Norm: 4.00
+No improvement. Patience: 1/5
+
+==================================================
+Epoch 7/30
+==================================================
+Epoch: 7, Batch: 100, Avg Loss: 5.6777, LR: 0.000360, Avg Grad Norm: 4.37 (101 finite gradients)
+Epoch: 7, Batch: 200, Avg Loss: 5.6909, LR: 0.000358, Avg Grad Norm: 4.60 (201 finite gradients)
+Epoch: 7, Batch: 300, Avg Loss: 5.7000, LR: 0.000357, Avg Grad Norm: 4.73 (301 finite gradients)
+Epoch: 7, Batch: 400, Avg Loss: 5.7026, LR: 0.000356, Avg Grad Norm: 4.78 (401 finite gradients)
+Epoch: 7, Batch: 500, Avg Loss: 5.7126, LR: 0.000355, Avg Grad Norm: 4.81 (501 finite gradients)
+Epoch: 7, Batch: 600, Avg Loss: 5.7218, LR: 0.000354, Avg Grad Norm: 4.84 (601 finite gradients)
+Epoch: 7, Batch: 700, Avg Loss: 5.7289, LR: 0.000353, Avg Grad Norm: 4.83 (701 finite gradients)
+Epoch: 7, Batch: 800, Avg Loss: 5.7340, LR: 0.000352, Avg Grad Norm: 4.81 (801 finite gradients)
+Epoch: 7, Batch: 900, Avg Loss: 5.7380, LR: 0.000350, Avg Grad Norm: 4.78 (901 finite gradients)
+Epoch: 7, Batch: 1000, Avg Loss: 5.7404, LR: 0.000349, Avg Grad Norm: 4.74 (1001 finite gradients)
+Epoch: 7, Batch: 1100, Avg Loss: 5.7445, LR: 0.000348, Avg Grad Norm: 4.72 (1101 finite gradients)
+Epoch: 7, Batch: 1200, Avg Loss: 5.7473, LR: 0.000347, Avg Grad Norm: 4.69 (1201 finite gradients)
+Epoch: 7, Batch: 1300, Avg Loss: 5.7496, LR: 0.000346, Avg Grad Norm: 4.67 (1301 finite gradients)
+Epoch: 7, Batch: 1400, Avg Loss: 5.7513, LR: 0.000345, Avg Grad Norm: 4.65 (1401 finite gradients)
+Epoch: 7, Batch: 1500, Avg Loss: 5.7536, LR: 0.000344, Avg Grad Norm: 4.64 (1501 finite gradients)
+Epoch: 7, Batch: 1600, Avg Loss: 5.7534, LR: 0.000343, Avg Grad Norm: 4.62 (1601 finite gradients)
+Epoch: 7, Batch: 1700, Avg Loss: 5.7551, LR: 0.000342, Avg Grad Norm: 4.61 (1701 finite gradients)
+Epoch: 7, Batch: 1800, Avg Loss: 5.7563, LR: 0.000341, Avg Grad Norm: 4.60 (1801 finite gradients)
+Epoch: 7, Batch: 1900, Avg Loss: 5.7568, LR: 0.000340, Avg Grad Norm: 4.60 (1900 finite gradients)
+Epoch: 7, Batch: 2000, Avg Loss: 5.7574, LR: 0.000339, Avg Grad Norm: 4.59 (2000 finite gradients)
+Epoch: 7, Batch: 2100, Avg Loss: 5.7576, LR: 0.000338, Avg Grad Norm: 4.58 (2100 finite gradients)
+Epoch: 7, Batch: 2200, Avg Loss: 5.7591, LR: 0.000337, Avg Grad Norm: 4.58 (2200 finite gradients)
+Epoch: 7, Batch: 2300, Avg Loss: 5.7604, LR: 0.000336, Avg Grad Norm: 4.58 (2300 finite gradients)
+Epoch: 7, Batch: 2400, Avg Loss: 5.7603, LR: 0.000335, Avg Grad Norm: 4.57 (2400 finite gradients)
+Train Loss: 5.7613, Val Loss: 5.6013
+Val Perplexity: 270.78
+Learning Rate: 0.000334
+Average Gradient Norm: 4.57
+No improvement. Patience: 2/5
+
+==================================================
+Epoch 8/30
+==================================================
+Epoch: 8, Batch: 100, Avg Loss: 5.6775, LR: 0.000333, Avg Grad Norm: 4.92 (101 finite gradients)
+Epoch: 8, Batch: 200, Avg Loss: 5.6967, LR: 0.000332, Avg Grad Norm: 5.10 (201 finite gradients)
+Epoch: 8, Batch: 300, Avg Loss: 5.6954, LR: 0.000331, Avg Grad Norm: 5.20 (301 finite gradients)
+Epoch: 8, Batch: 400, Avg Loss: 5.7088, LR: 0.000330, Avg Grad Norm: 5.23 (401 finite gradients)
+Epoch: 8, Batch: 500, Avg Loss: 5.7139, LR: 0.000329, Avg Grad Norm: 5.24 (501 finite gradients)
+Epoch: 8, Batch: 600, Avg Loss: 5.7188, LR: 0.000328, Avg Grad Norm: 5.25 (601 finite gradients)
+Epoch: 8, Batch: 700, Avg Loss: 5.7241, LR: 0.000328, Avg Grad Norm: 5.25 (701 finite gradients)
+Epoch: 8, Batch: 800, Avg Loss: 5.7293, LR: 0.000327, Avg Grad Norm: 5.21 (801 finite gradients)
+Epoch: 8, Batch: 900, Avg Loss: 5.7343, LR: 0.000326, Avg Grad Norm: 5.18 (901 finite gradients)
+Epoch: 8, Batch: 1000, Avg Loss: 5.7398, LR: 0.000325, Avg Grad Norm: 5.15 (1001 finite gradients)
+Epoch: 8, Batch: 1100, Avg Loss: 5.7410, LR: 0.000324, Avg Grad Norm: 5.13 (1101 finite gradients)
+Epoch: 8, Batch: 1200, Avg Loss: 5.7422, LR: 0.000323, Avg Grad Norm: 5.10 (1201 finite gradients)
+Epoch: 8, Batch: 1300, Avg Loss: 5.7439, LR: 0.000322, Avg Grad Norm: 5.06 (1301 finite gradients)
+Epoch: 8, Batch: 1400, Avg Loss: 5.7458, LR: 0.000321, Avg Grad Norm: 5.04 (1401 finite gradients)
+Epoch: 8, Batch: 1500, Avg Loss: 5.7495, LR: 0.000321, Avg Grad Norm: 5.03 (1501 finite gradients)
+Epoch: 8, Batch: 1600, Avg Loss: 5.7516, LR: 0.000320, Avg Grad Norm: 5.02 (1601 finite gradients)
+Epoch: 8, Batch: 1700, Avg Loss: 5.7518, LR: 0.000319, Avg Grad Norm: 5.01 (1700 finite gradients)
+Epoch: 8, Batch: 1800, Avg Loss: 5.7541, LR: 0.000318, Avg Grad Norm: 5.00 (1800 finite gradients)
+Epoch: 8, Batch: 1900, Avg Loss: 5.7558, LR: 0.000317, Avg Grad Norm: 4.99 (1900 finite gradients)
+Epoch: 8, Batch: 2000, Avg Loss: 5.7573, LR: 0.000316, Avg Grad Norm: 4.98 (2000 finite gradients)
+Epoch: 8, Batch: 2100, Avg Loss: 5.7580, LR: 0.000316, Avg Grad Norm: 4.97 (2100 finite gradients)
+Epoch: 8, Batch: 2200, Avg Loss: 5.7591, LR: 0.000315, Avg Grad Norm: 4.96 (2200 finite gradients)
+Epoch: 8, Batch: 2300, Avg Loss: 5.7598, LR: 0.000314, Avg Grad Norm: 4.96 (2300 finite gradients)
+Epoch: 8, Batch: 2400, Avg Loss: 5.7606, LR: 0.000313, Avg Grad Norm: 4.96 (2400 finite gradients)
+Train Loss: 5.7614, Val Loss: 5.6062
+Val Perplexity: 272.11
+Learning Rate: 0.000313
+Average Gradient Norm: 4.96
+No improvement. Patience: 3/5
+
+==================================================
+Epoch 9/30
+==================================================
+Epoch: 9, Batch: 100, Avg Loss: 5.6897, LR: 0.000312, Avg Grad Norm: 5.18 (101 finite gradients)
+Epoch: 9, Batch: 200, Avg Loss: 5.7025, LR: 0.000311, Avg Grad Norm: 5.36 (201 finite gradients)
+Epoch: 9, Batch: 300, Avg Loss: 5.7106, LR: 0.000310, Avg Grad Norm: 5.58 (301 finite gradients)
+Epoch: 9, Batch: 400, Avg Loss: 5.7151, LR: 0.000309, Avg Grad Norm: 5.69 (401 finite gradients)
+Epoch: 9, Batch: 500, Avg Loss: 5.7291, LR: 0.000309, Avg Grad Norm: 5.77 (501 finite gradients)
+Epoch: 9, Batch: 600, Avg Loss: 5.7382, LR: 0.000308, Avg Grad Norm: 5.79 (601 finite gradients)
+Epoch: 9, Batch: 700, Avg Loss: 5.7419, LR: 0.000307, Avg Grad Norm: 5.77 (701 finite gradients)
+Epoch: 9, Batch: 800, Avg Loss: 5.7438, LR: 0.000306, Avg Grad Norm: 5.73 (801 finite gradients)
+Epoch: 9, Batch: 900, Avg Loss: 5.7446, LR: 0.000306, Avg Grad Norm: 5.69 (901 finite gradients)
+Epoch: 9, Batch: 1000, Avg Loss: 5.7472, LR: 0.000305, Avg Grad Norm: 5.65 (1001 finite gradients)
+Epoch: 9, Batch: 1100, Avg Loss: 5.7490, LR: 0.000304, Avg Grad Norm: 5.61 (1101 finite gradients)
+Epoch: 9, Batch: 1200, Avg Loss: 5.7512, LR: 0.000304, Avg Grad Norm: 5.59 (1201 finite gradients)
+Epoch: 9, Batch: 1300, Avg Loss: 5.7532, LR: 0.000303, Avg Grad Norm: 5.54 (1301 finite gradients)
+Epoch: 9, Batch: 1400, Avg Loss: 5.7549, LR: 0.000302, Avg Grad Norm: 5.52 (1401 finite gradients)
+Epoch: 9, Batch: 1500, Avg Loss: 5.7549, LR: 0.000301, Avg Grad Norm: 5.49 (1501 finite gradients)
+Epoch: 9, Batch: 1600, Avg Loss: 5.7563, LR: 0.000301, Avg Grad Norm: 5.47 (1601 finite gradients)
+Epoch: 9, Batch: 1700, Avg Loss: 5.7568, LR: 0.000300, Avg Grad Norm: 5.46 (1701 finite gradients)
+Epoch: 9, Batch: 1800, Avg Loss: 5.7584, LR: 0.000299, Avg Grad Norm: 5.44 (1801 finite gradients)
+Epoch: 9, Batch: 1900, Avg Loss: 5.7600, LR: 0.000299, Avg Grad Norm: 5.44 (1901 finite gradients)
+Epoch: 9, Batch: 2000, Avg Loss: 5.7620, LR: 0.000298, Avg Grad Norm: 5.43 (2001 finite gradients)
+Epoch: 9, Batch: 2100, Avg Loss: 5.7624, LR: 0.000297, Avg Grad Norm: 5.42 (2101 finite gradients)
+Epoch: 9, Batch: 2200, Avg Loss: 5.7628, LR: 0.000297, Avg Grad Norm: 5.41 (2201 finite gradients)
+Epoch: 9, Batch: 2300, Avg Loss: 5.7629, LR: 0.000296, Avg Grad Norm: 5.40 (2301 finite gradients)
+Epoch: 9, Batch: 2400, Avg Loss: 5.7647, LR: 0.000295, Avg Grad Norm: 5.40 (2401 finite gradients)
+Epoch 00009: reducing learning rate of group 0 to 1.4731e-04.
+Train Loss: 5.7647, Val Loss: 5.6112
+Val Perplexity: 273.47
+Learning Rate: 0.000295
+Average Gradient Norm: 5.39
+No improvement. Patience: 4/5
+
+==================================================
+Epoch 10/30
+==================================================
+Epoch: 10, Batch: 100, Avg Loss: 5.6798, LR: 0.000294, Avg Grad Norm: 5.60 (101 finite gradients)
+Epoch: 10, Batch: 200, Avg Loss: 5.6877, LR: 0.000293, Avg Grad Norm: 5.81 (201 finite gradients)
+Epoch: 10, Batch: 300, Avg Loss: 5.6987, LR: 0.000293, Avg Grad Norm: 5.89 (301 finite gradients)
+Epoch: 10, Batch: 400, Avg Loss: 5.7127, LR: 0.000292, Avg Grad Norm: 5.99 (401 finite gradients)
+Epoch: 10, Batch: 500, Avg Loss: 5.7206, LR: 0.000291, Avg Grad Norm: 6.06 (501 finite gradients)
+Epoch: 10, Batch: 600, Avg Loss: 5.7287, LR: 0.000291, Avg Grad Norm: 6.09 (601 finite gradients)
+Epoch: 10, Batch: 700, Avg Loss: 5.7332, LR: 0.000290, Avg Grad Norm: 6.06 (699 finite gradients)
+Epoch: 10, Batch: 800, Avg Loss: 5.7356, LR: 0.000290, Avg Grad Norm: 6.04 (799 finite gradients)
+Epoch: 10, Batch: 900, Avg Loss: 5.7372, LR: 0.000289, Avg Grad Norm: 6.01 (899 finite gradients)
+Epoch: 10, Batch: 1000, Avg Loss: 5.7419, LR: 0.000288, Avg Grad Norm: 5.97 (999 finite gradients)
+Epoch: 10, Batch: 1100, Avg Loss: 5.7424, LR: 0.000288, Avg Grad Norm: 5.94 (1099 finite gradients)
+Epoch: 10, Batch: 1200, Avg Loss: 5.7469, LR: 0.000287, Avg Grad Norm: 5.91 (1199 finite gradients)
+Epoch: 10, Batch: 1300, Avg Loss: 5.7482, LR: 0.000286, Avg Grad Norm: 5.89 (1299 finite gradients)
+Epoch: 10, Batch: 1400, Avg Loss: 5.7508, LR: 0.000286, Avg Grad Norm: 5.87 (1399 finite gradients)
+Epoch: 10, Batch: 1500, Avg Loss: 5.7533, LR: 0.000285, Avg Grad Norm: 5.86 (1499 finite gradients)
+Epoch: 10, Batch: 1600, Avg Loss: 5.7552, LR: 0.000285, Avg Grad Norm: 5.84 (1599 finite gradients)
+Epoch: 10, Batch: 1700, Avg Loss: 5.7565, LR: 0.000284, Avg Grad Norm: 5.82 (1699 finite gradients)
+Epoch: 10, Batch: 1800, Avg Loss: 5.7591, LR: 0.000283, Avg Grad Norm: 5.80 (1799 finite gradients)
+Epoch: 10, Batch: 1900, Avg Loss: 5.7602, LR: 0.000283, Avg Grad Norm: 5.78 (1899 finite gradients)
+Epoch: 10, Batch: 2000, Avg Loss: 5.7612, LR: 0.000282, Avg Grad Norm: 5.76 (1999 finite gradients)
+Epoch: 10, Batch: 2100, Avg Loss: 5.7612, LR: 0.000282, Avg Grad Norm: 5.75 (2099 finite gradients)
+Epoch: 10, Batch: 2200, Avg Loss: 5.7628, LR: 0.000281, Avg Grad Norm: 5.73 (2199 finite gradients)
+Epoch: 10, Batch: 2300, Avg Loss: 5.7636, LR: 0.000281, Avg Grad Norm: 5.72 (2299 finite gradients)
+Epoch: 10, Batch: 2400, Avg Loss: 5.7655, LR: 0.000280, Avg Grad Norm: 5.71 (2399 finite gradients)
+Train Loss: 5.7670, Val Loss: 5.6059
+Val Perplexity: 272.04
+Learning Rate: 0.000280
+Average Gradient Norm: 5.71
+No improvement. Patience: 5/5
+
+==================================================
+EARLY STOPPING TRIGGERED!
+No improvement for 5 consecutive epochs
+Best validation loss: 5.6039
+Best validation perplexity: 271.47
+Best epoch was: 5
+Stopping at epoch 10
+==================================================
+
+==================================================
+Training stopped early
+Best validation loss: 5.6039
+Best validation perplexity: 271.47
+Best epoch: 5
+Saving best model...
+Best model saved to checkpoints/best_model_rope.pt
+==================================================
+
+Training completed!
+Model stopped early at epoch 10
+Best validation loss: 5.6039
+Best validation perplexity: 271.47
+
+==================================================
+Evaluating on test set...
+==================================================
+
+Evaluating with greedy decoding...
+
+FINAL TEST SET BLEU SCORE: 3.46
+==================================================
+
+Training Transformer with Relative Position Bias...
+--------------------------------------------------
+Loading and preparing data...
+Data split: Train=80000, Val=10000, Test=10000
+Source vocabulary size: 64786
+Target vocabulary size: 31522
+Special tokens: PAD=0, SOS=1, EOS=2, UNK=3
+Training on cuda
+Model parameters: 109,597,378
+Using Noam scheduler with warmup_steps=8000
+Using Label Smoothing Loss with smoothing=0.1
+Weight decay: 0.0001
+Dropout rate: 0.3
+Gradient clipping: 0.5
+Early stopping patience: 5 epochs
+Minimum delta for improvement: 0.01
+
+==================================================
+Epoch 1/30
+==================================================
+Epoch: 1, Batch: 100, Avg Loss: 10.2346, LR: 0.000006, Avg Grad Norm: 2.33 (101 finite gradients)
+Epoch: 1, Batch: 200, Avg Loss: 10.0154, LR: 0.000012, Avg Grad Norm: 2.22 (201 finite gradients)
+Epoch: 1, Batch: 300, Avg Loss: 9.7535, LR: 0.000019, Avg Grad Norm: 2.20 (301 finite gradients)
+Epoch: 1, Batch: 400, Avg Loss: 9.4382, LR: 0.000025, Avg Grad Norm: 2.19 (401 finite gradients)
+Epoch: 1, Batch: 500, Avg Loss: 9.1013, LR: 0.000031, Avg Grad Norm: 2.12 (501 finite gradients)
+Epoch: 1, Batch: 600, Avg Loss: 8.8088, LR: 0.000037, Avg Grad Norm: 1.93 (601 finite gradients)
+Epoch: 1, Batch: 700, Avg Loss: 8.5914, LR: 0.000043, Avg Grad Norm: 1.77 (701 finite gradients)
+Epoch: 1, Batch: 800, Avg Loss: 8.4122, LR: 0.000049, Avg Grad Norm: 1.72 (801 finite gradients)
+Epoch: 1, Batch: 900, Avg Loss: 8.2574, LR: 0.000056, Avg Grad Norm: 1.75 (901 finite gradients)
+Epoch: 1, Batch: 1000, Avg Loss: 8.1202, LR: 0.000062, Avg Grad Norm: 1.84 (1001 finite gradients)
+Epoch: 1, Batch: 1100, Avg Loss: 7.9984, LR: 0.000068, Avg Grad Norm: 1.94 (1101 finite gradients)
+Epoch: 1, Batch: 1200, Avg Loss: 7.8907, LR: 0.000074, Avg Grad Norm: 2.03 (1201 finite gradients)
+Epoch: 1, Batch: 1300, Avg Loss: 7.7923, LR: 0.000080, Avg Grad Norm: 2.09 (1301 finite gradients)
+Epoch: 1, Batch: 1400, Avg Loss: 7.7034, LR: 0.000087, Avg Grad Norm: 2.15 (1401 finite gradients)
+Epoch: 1, Batch: 1500, Avg Loss: 7.6229, LR: 0.000093, Avg Grad Norm: 2.20 (1501 finite gradients)
+Epoch: 1, Batch: 1600, Avg Loss: 7.5476, LR: 0.000099, Avg Grad Norm: 2.24 (1601 finite gradients)
+Epoch: 1, Batch: 1700, Avg Loss: 7.4785, LR: 0.000105, Avg Grad Norm: 2.28 (1701 finite gradients)
+Epoch: 1, Batch: 1800, Avg Loss: 7.4154, LR: 0.000111, Avg Grad Norm: 2.31 (1801 finite gradients)
+Epoch: 1, Batch: 1900, Avg Loss: 7.3570, LR: 0.000117, Avg Grad Norm: 2.34 (1901 finite gradients)
+Epoch: 1, Batch: 2000, Avg Loss: 7.3029, LR: 0.000124, Avg Grad Norm: 2.36 (2001 finite gradients)
+Epoch: 1, Batch: 2100, Avg Loss: 7.2519, LR: 0.000130, Avg Grad Norm: 2.38 (2101 finite gradients)
+Epoch: 1, Batch: 2200, Avg Loss: 7.2052, LR: 0.000136, Avg Grad Norm: 2.40 (2201 finite gradients)
+Epoch: 1, Batch: 2300, Avg Loss: 7.1606, LR: 0.000142, Avg Grad Norm: 2.42 (2301 finite gradients)
+Epoch: 1, Batch: 2400, Avg Loss: 7.1192, LR: 0.000148, Avg Grad Norm: 2.43 (2401 finite gradients)
+Train Loss: 7.0798, Val Loss: 5.9806
+Val Perplexity: 395.69
+Learning Rate: 0.000154
+Average Gradient Norm: 2.45
+Validation loss improved from inf to 5.9806
+New best model saved! Val loss: 5.9806, Perplexity: 395.69
+
+==================================================
+Epoch 2/30
+==================================================
+Epoch: 2, Batch: 100, Avg Loss: 6.0887, LR: 0.000161, Avg Grad Norm: 2.95 (101 finite gradients)
+Epoch: 2, Batch: 200, Avg Loss: 6.0921, LR: 0.000167, Avg Grad Norm: 2.97 (201 finite gradients)
+Epoch: 2, Batch: 300, Avg Loss: 6.0849, LR: 0.000173, Avg Grad Norm: 2.98 (301 finite gradients)
+Epoch: 2, Batch: 400, Avg Loss: 6.0760, LR: 0.000179, Avg Grad Norm: 2.99 (401 finite gradients)
+Epoch: 2, Batch: 500, Avg Loss: 6.0711, LR: 0.000185, Avg Grad Norm: 2.98 (501 finite gradients)
+Epoch: 2, Batch: 600, Avg Loss: 6.0682, LR: 0.000192, Avg Grad Norm: 2.95 (601 finite gradients)
+Epoch: 2, Batch: 700, Avg Loss: 6.0623, LR: 0.000198, Avg Grad Norm: 2.94 (701 finite gradients)
+Epoch: 2, Batch: 800, Avg Loss: 6.0576, LR: 0.000204, Avg Grad Norm: 2.91 (801 finite gradients)
+Epoch: 2, Batch: 900, Avg Loss: 6.0525, LR: 0.000210, Avg Grad Norm: 2.88 (901 finite gradients)
+Epoch: 2, Batch: 1000, Avg Loss: 6.0488, LR: 0.000216, Avg Grad Norm: 2.86 (1001 finite gradients)
+Epoch: 2, Batch: 1100, Avg Loss: 6.0443, LR: 0.000222, Avg Grad Norm: 2.84 (1101 finite gradients)
+Epoch: 2, Batch: 1200, Avg Loss: 6.0408, LR: 0.000229, Avg Grad Norm: 2.83 (1201 finite gradients)
+Epoch: 2, Batch: 1300, Avg Loss: 6.0376, LR: 0.000235, Avg Grad Norm: 2.82 (1301 finite gradients)
+Epoch: 2, Batch: 1400, Avg Loss: 6.0344, LR: 0.000241, Avg Grad Norm: 2.80 (1401 finite gradients)
+Epoch: 2, Batch: 1500, Avg Loss: 6.0300, LR: 0.000247, Avg Grad Norm: 2.79 (1501 finite gradients)
+Epoch: 2, Batch: 1600, Avg Loss: 6.0249, LR: 0.000253, Avg Grad Norm: 2.79 (1601 finite gradients)
+Epoch: 2, Batch: 1700, Avg Loss: 6.0214, LR: 0.000259, Avg Grad Norm: 2.78 (1700 finite gradients)
+Epoch: 2, Batch: 1800, Avg Loss: 6.0161, LR: 0.000266, Avg Grad Norm: 2.77 (1800 finite gradients)
+Epoch: 2, Batch: 1900, Avg Loss: 6.0139, LR: 0.000272, Avg Grad Norm: 2.77 (1900 finite gradients)
+Epoch: 2, Batch: 2000, Avg Loss: 6.0102, LR: 0.000278, Avg Grad Norm: 2.76 (2000 finite gradients)
+Epoch: 2, Batch: 2100, Avg Loss: 6.0074, LR: 0.000284, Avg Grad Norm: 2.76 (2100 finite gradients)
+Epoch: 2, Batch: 2200, Avg Loss: 6.0046, LR: 0.000290, Avg Grad Norm: 2.76 (2200 finite gradients)
+Epoch: 2, Batch: 2300, Avg Loss: 6.0019, LR: 0.000297, Avg Grad Norm: 2.75 (2300 finite gradients)
+Epoch: 2, Batch: 2400, Avg Loss: 5.9985, LR: 0.000303, Avg Grad Norm: 2.75 (2400 finite gradients)
+Train Loss: 5.9952, Val Loss: 5.7706
+Val Perplexity: 320.73
+Learning Rate: 0.000309
+Average Gradient Norm: 2.74
+Validation loss improved from 5.9806 to 5.7706
+New best model saved! Val loss: 5.7706, Perplexity: 320.73
+
+==================================================
+Epoch 3/30
+==================================================
+Epoch: 3, Batch: 100, Avg Loss: 5.8501, LR: 0.000315, Avg Grad Norm: 2.85 (101 finite gradients)
+Epoch: 3, Batch: 200, Avg Loss: 5.8734, LR: 0.000321, Avg Grad Norm: 3.00 (201 finite gradients)
+Epoch: 3, Batch: 300, Avg Loss: 5.8857, LR: 0.000327, Avg Grad Norm: 3.04 (301 finite gradients)
+Epoch: 3, Batch: 400, Avg Loss: 5.8881, LR: 0.000334, Avg Grad Norm: 3.04 (401 finite gradients)
+Epoch: 3, Batch: 500, Avg Loss: 5.8879, LR: 0.000340, Avg Grad Norm: 3.04 (500 finite gradients)
+Epoch: 3, Batch: 600, Avg Loss: 5.8970, LR: 0.000346, Avg Grad Norm: 3.03 (600 finite gradients)
+Epoch: 3, Batch: 700, Avg Loss: 5.8980, LR: 0.000352, Avg Grad Norm: 3.01 (700 finite gradients)
+Epoch: 3, Batch: 800, Avg Loss: 5.8990, LR: 0.000358, Avg Grad Norm: 2.99 (800 finite gradients)
+Epoch: 3, Batch: 900, Avg Loss: 5.9007, LR: 0.000364, Avg Grad Norm: 2.97 (900 finite gradients)
+Epoch: 3, Batch: 1000, Avg Loss: 5.9008, LR: 0.000371, Avg Grad Norm: 2.95 (1000 finite gradients)
+Epoch: 3, Batch: 1100, Avg Loss: 5.9021, LR: 0.000377, Avg Grad Norm: 2.93 (1100 finite gradients)
+Epoch: 3, Batch: 1200, Avg Loss: 5.9007, LR: 0.000383, Avg Grad Norm: 2.91 (1200 finite gradients)
+Epoch: 3, Batch: 1300, Avg Loss: 5.8993, LR: 0.000389, Avg Grad Norm: 2.89 (1300 finite gradients)
+Epoch: 3, Batch: 1400, Avg Loss: 5.8970, LR: 0.000395, Avg Grad Norm: 2.88 (1400 finite gradients)
+Epoch: 3, Batch: 1500, Avg Loss: 5.8949, LR: 0.000402, Avg Grad Norm: 2.87 (1500 finite gradients)
+Epoch: 3, Batch: 1600, Avg Loss: 5.8951, LR: 0.000408, Avg Grad Norm: 2.86 (1600 finite gradients)
+Epoch: 3, Batch: 1700, Avg Loss: 5.8927, LR: 0.000414, Avg Grad Norm: 2.85 (1700 finite gradients)
+Epoch: 3, Batch: 1800, Avg Loss: 5.8926, LR: 0.000420, Avg Grad Norm: 2.84 (1800 finite gradients)
+Epoch: 3, Batch: 1900, Avg Loss: 5.8928, LR: 0.000426, Avg Grad Norm: 2.83 (1900 finite gradients)
+Epoch: 3, Batch: 2000, Avg Loss: 5.8922, LR: 0.000432, Avg Grad Norm: 2.82 (2000 finite gradients)
+Epoch: 3, Batch: 2100, Avg Loss: 5.8921, LR: 0.000439, Avg Grad Norm: 2.81 (2100 finite gradients)
+Epoch: 3, Batch: 2200, Avg Loss: 5.8914, LR: 0.000445, Avg Grad Norm: 2.80 (2200 finite gradients)
+Epoch: 3, Batch: 2300, Avg Loss: 5.8902, LR: 0.000451, Avg Grad Norm: 2.79 (2300 finite gradients)
+Epoch: 3, Batch: 2400, Avg Loss: 5.8897, LR: 0.000457, Avg Grad Norm: 2.78 (2400 finite gradients)
+Train Loss: 5.8889, Val Loss: 5.6982
+Val Perplexity: 298.32
+Learning Rate: 0.000463
+Average Gradient Norm: 2.77
+Validation loss improved from 5.7706 to 5.6982
+New best model saved! Val loss: 5.6982, Perplexity: 298.32
+
+==================================================
+Epoch 4/30
+==================================================
+Epoch: 4, Batch: 100, Avg Loss: 5.7956, LR: 0.000469, Avg Grad Norm: 2.75 (100 finite gradients)
+Epoch: 4, Batch: 200, Avg Loss: 5.8063, LR: 0.000476, Avg Grad Norm: 2.83 (200 finite gradients)
+Epoch: 4, Batch: 300, Avg Loss: 5.8233, LR: 0.000482, Avg Grad Norm: 2.92 (300 finite gradients)
+Epoch: 4, Batch: 400, Avg Loss: 5.8303, LR: 0.000488, Avg Grad Norm: 2.93 (400 finite gradients)
+Epoch: 4, Batch: 500, Avg Loss: 5.8356, LR: 0.000494, Avg Grad Norm: 2.93 (500 finite gradients)
+Epoch: 4, Batch: 600, Avg Loss: 5.8398, LR: 0.000491, Avg Grad Norm: 2.91 (600 finite gradients)
+Epoch: 4, Batch: 700, Avg Loss: 5.8397, LR: 0.000488, Avg Grad Norm: 2.88 (700 finite gradients)
+Epoch: 4, Batch: 800, Avg Loss: 5.8421, LR: 0.000485, Avg Grad Norm: 2.86 (800 finite gradients)
+Epoch: 4, Batch: 900, Avg Loss: 5.8442, LR: 0.000482, Avg Grad Norm: 2.84 (900 finite gradients)
+Epoch: 4, Batch: 1000, Avg Loss: 5.8445, LR: 0.000479, Avg Grad Norm: 2.83 (1000 finite gradients)
+Epoch: 4, Batch: 1100, Avg Loss: 5.8444, LR: 0.000477, Avg Grad Norm: 2.82 (1100 finite gradients)
+Epoch: 4, Batch: 1200, Avg Loss: 5.8453, LR: 0.000474, Avg Grad Norm: 2.81 (1200 finite gradients)
+Epoch: 4, Batch: 1300, Avg Loss: 5.8440, LR: 0.000471, Avg Grad Norm: 2.80 (1300 finite gradients)
+Epoch: 4, Batch: 1400, Avg Loss: 5.8414, LR: 0.000468, Avg Grad Norm: 2.79 (1400 finite gradients)
+Epoch: 4, Batch: 1500, Avg Loss: 5.8414, LR: 0.000466, Avg Grad Norm: 2.79 (1500 finite gradients)
+Epoch: 4, Batch: 1600, Avg Loss: 5.8384, LR: 0.000463, Avg Grad Norm: 2.78 (1600 finite gradients)
+Epoch: 4, Batch: 1700, Avg Loss: 5.8382, LR: 0.000461, Avg Grad Norm: 2.77 (1700 finite gradients)
+Epoch: 4, Batch: 1800, Avg Loss: 5.8371, LR: 0.000458, Avg Grad Norm: 2.77 (1800 finite gradients)
+Epoch: 4, Batch: 1900, Avg Loss: 5.8373, LR: 0.000456, Avg Grad Norm: 2.77 (1900 finite gradients)
+Epoch: 4, Batch: 2000, Avg Loss: 5.8368, LR: 0.000453, Avg Grad Norm: 2.77 (2000 finite gradients)
+Epoch: 4, Batch: 2100, Avg Loss: 5.8368, LR: 0.000451, Avg Grad Norm: 2.77 (2099 finite gradients)
+Epoch: 4, Batch: 2200, Avg Loss: 5.8357, LR: 0.000449, Avg Grad Norm: 2.77 (2199 finite gradients)
+Epoch: 4, Batch: 2300, Avg Loss: 5.8348, LR: 0.000446, Avg Grad Norm: 2.77 (2299 finite gradients)
+Epoch: 4, Batch: 2400, Avg Loss: 5.8339, LR: 0.000444, Avg Grad Norm: 2.77 (2399 finite gradients)
+Train Loss: 5.8332, Val Loss: 5.6482
+Val Perplexity: 283.79
+Learning Rate: 0.000442
+Average Gradient Norm: 2.78
+Validation loss improved from 5.6982 to 5.6482
+New best model saved! Val loss: 5.6482, Perplexity: 283.79
+
+==================================================
+Epoch 5/30
+==================================================
+Epoch: 5, Batch: 100, Avg Loss: 5.7271, LR: 0.000440, Avg Grad Norm: 3.14 (101 finite gradients)
+Epoch: 5, Batch: 200, Avg Loss: 5.7420, LR: 0.000438, Avg Grad Norm: 3.25 (201 finite gradients)
+Epoch: 5, Batch: 300, Avg Loss: 5.7451, LR: 0.000435, Avg Grad Norm: 3.33 (301 finite gradients)
+Epoch: 5, Batch: 400, Avg Loss: 5.7535, LR: 0.000433, Avg Grad Norm: 3.36 (401 finite gradients)
+Epoch: 5, Batch: 500, Avg Loss: 5.7608, LR: 0.000431, Avg Grad Norm: 3.38 (501 finite gradients)
+Epoch: 5, Batch: 600, Avg Loss: 5.7628, LR: 0.000429, Avg Grad Norm: 3.38 (601 finite gradients)
+Epoch: 5, Batch: 700, Avg Loss: 5.7645, LR: 0.000427, Avg Grad Norm: 3.38 (701 finite gradients)
+Epoch: 5, Batch: 800, Avg Loss: 5.7694, LR: 0.000425, Avg Grad Norm: 3.37 (801 finite gradients)
+Epoch: 5, Batch: 900, Avg Loss: 5.7718, LR: 0.000423, Avg Grad Norm: 3.36 (901 finite gradients)
+Epoch: 5, Batch: 1000, Avg Loss: 5.7735, LR: 0.000421, Avg Grad Norm: 3.35 (1001 finite gradients)
+Epoch: 5, Batch: 1100, Avg Loss: 5.7751, LR: 0.000419, Avg Grad Norm: 3.34 (1101 finite gradients)
+Epoch: 5, Batch: 1200, Avg Loss: 5.7781, LR: 0.000418, Avg Grad Norm: 3.33 (1201 finite gradients)
+Epoch: 5, Batch: 1300, Avg Loss: 5.7792, LR: 0.000416, Avg Grad Norm: 3.33 (1301 finite gradients)
+Epoch: 5, Batch: 1400, Avg Loss: 5.7818, LR: 0.000414, Avg Grad Norm: 3.33 (1401 finite gradients)
+Epoch: 5, Batch: 1500, Avg Loss: 5.7809, LR: 0.000412, Avg Grad Norm: 3.33 (1501 finite gradients)
+Epoch: 5, Batch: 1600, Avg Loss: 5.7816, LR: 0.000410, Avg Grad Norm: 3.33 (1600 finite gradients)
+Epoch: 5, Batch: 1700, Avg Loss: 5.7836, LR: 0.000409, Avg Grad Norm: 3.33 (1700 finite gradients)
+Epoch: 5, Batch: 1800, Avg Loss: 5.7840, LR: 0.000407, Avg Grad Norm: 3.34 (1800 finite gradients)
+Epoch: 5, Batch: 1900, Avg Loss: 5.7843, LR: 0.000405, Avg Grad Norm: 3.34 (1900 finite gradients)
+Epoch: 5, Batch: 2000, Avg Loss: 5.7856, LR: 0.000403, Avg Grad Norm: 3.34 (2000 finite gradients)
+Epoch: 5, Batch: 2100, Avg Loss: 5.7855, LR: 0.000402, Avg Grad Norm: 3.34 (2100 finite gradients)
+Epoch: 5, Batch: 2200, Avg Loss: 5.7861, LR: 0.000400, Avg Grad Norm: 3.34 (2200 finite gradients)
+Epoch: 5, Batch: 2300, Avg Loss: 5.7865, LR: 0.000398, Avg Grad Norm: 3.35 (2300 finite gradients)
+Epoch: 5, Batch: 2400, Avg Loss: 5.7871, LR: 0.000397, Avg Grad Norm: 3.35 (2400 finite gradients)
+Train Loss: 5.7880, Val Loss: 5.6344
+Val Perplexity: 279.88
+Learning Rate: 0.000395
+Average Gradient Norm: 3.36
+Validation loss improved from 5.6482 to 5.6344
+New best model saved! Val loss: 5.6344, Perplexity: 279.88
+
+==================================================
+Epoch 6/30
+==================================================
+Epoch: 6, Batch: 100, Avg Loss: 5.7275, LR: 0.000394, Avg Grad Norm: 3.92 (101 finite gradients)
+Epoch: 6, Batch: 200, Avg Loss: 5.7392, LR: 0.000392, Avg Grad Norm: 4.06 (201 finite gradients)
+Epoch: 6, Batch: 300, Avg Loss: 5.7452, LR: 0.000391, Avg Grad Norm: 4.14 (301 finite gradients)
+Epoch: 6, Batch: 400, Avg Loss: 5.7439, LR: 0.000389, Avg Grad Norm: 4.14 (401 finite gradients)
+Epoch: 6, Batch: 500, Avg Loss: 5.7452, LR: 0.000388, Avg Grad Norm: 4.13 (501 finite gradients)
+Epoch: 6, Batch: 600, Avg Loss: 5.7524, LR: 0.000386, Avg Grad Norm: 4.10 (601 finite gradients)
+Epoch: 6, Batch: 700, Avg Loss: 5.7570, LR: 0.000385, Avg Grad Norm: 4.07 (701 finite gradients)
+Epoch: 6, Batch: 800, Avg Loss: 5.7601, LR: 0.000383, Avg Grad Norm: 4.04 (801 finite gradients)
+Epoch: 6, Batch: 900, Avg Loss: 5.7649, LR: 0.000382, Avg Grad Norm: 4.02 (901 finite gradients)
+Epoch: 6, Batch: 1000, Avg Loss: 5.7653, LR: 0.000380, Avg Grad Norm: 3.99 (1001 finite gradients)
+Epoch: 6, Batch: 1100, Avg Loss: 5.7674, LR: 0.000379, Avg Grad Norm: 3.98 (1100 finite gradients)
+Epoch: 6, Batch: 1200, Avg Loss: 5.7681, LR: 0.000378, Avg Grad Norm: 3.96 (1199 finite gradients)
+Epoch: 6, Batch: 1300, Avg Loss: 5.7688, LR: 0.000376, Avg Grad Norm: 3.94 (1299 finite gradients)
+Epoch: 6, Batch: 1400, Avg Loss: 5.7711, LR: 0.000375, Avg Grad Norm: 3.92 (1399 finite gradients)
+Epoch: 6, Batch: 1500, Avg Loss: 5.7712, LR: 0.000373, Avg Grad Norm: 3.91 (1499 finite gradients)
+Epoch: 6, Batch: 1600, Avg Loss: 5.7716, LR: 0.000372, Avg Grad Norm: 3.91 (1599 finite gradients)
+Epoch: 6, Batch: 1700, Avg Loss: 5.7713, LR: 0.000371, Avg Grad Norm: 3.90 (1699 finite gradients)
+Epoch: 6, Batch: 1800, Avg Loss: 5.7726, LR: 0.000370, Avg Grad Norm: 3.91 (1799 finite gradients)
+Epoch: 6, Batch: 1900, Avg Loss: 5.7738, LR: 0.000368, Avg Grad Norm: 3.91 (1899 finite gradients)
+Epoch: 6, Batch: 2000, Avg Loss: 5.7729, LR: 0.000367, Avg Grad Norm: 3.91 (1999 finite gradients)
+Epoch: 6, Batch: 2100, Avg Loss: 5.7739, LR: 0.000366, Avg Grad Norm: 3.90 (2099 finite gradients)
+Epoch: 6, Batch: 2200, Avg Loss: 5.7749, LR: 0.000364, Avg Grad Norm: 3.90 (2199 finite gradients)
+Epoch: 6, Batch: 2300, Avg Loss: 5.7760, LR: 0.000363, Avg Grad Norm: 3.90 (2299 finite gradients)
+Epoch: 6, Batch: 2400, Avg Loss: 5.7764, LR: 0.000362, Avg Grad Norm: 3.89 (2399 finite gradients)
+Train Loss: 5.7766, Val Loss: 5.6291
+Val Perplexity: 278.41
+Learning Rate: 0.000361
+Average Gradient Norm: 3.89
+No improvement. Patience: 1/5
+
+==================================================
+Epoch 7/30
+==================================================
+Epoch: 7, Batch: 100, Avg Loss: 5.6764, LR: 0.000360, Avg Grad Norm: 4.09 (101 finite gradients)
+Epoch: 7, Batch: 200, Avg Loss: 5.6996, LR: 0.000358, Avg Grad Norm: 4.30 (201 finite gradients)
+Epoch: 7, Batch: 300, Avg Loss: 5.7148, LR: 0.000357, Avg Grad Norm: 4.44 (301 finite gradients)
+Epoch: 7, Batch: 400, Avg Loss: 5.7282, LR: 0.000356, Avg Grad Norm: 4.51 (401 finite gradients)
+Epoch: 7, Batch: 500, Avg Loss: 5.7323, LR: 0.000355, Avg Grad Norm: 4.48 (501 finite gradients)
+Epoch: 7, Batch: 600, Avg Loss: 5.7387, LR: 0.000354, Avg Grad Norm: 4.48 (601 finite gradients)
+Epoch: 7, Batch: 700, Avg Loss: 5.7468, LR: 0.000353, Avg Grad Norm: 4.48 (701 finite gradients)
+Epoch: 7, Batch: 800, Avg Loss: 5.7512, LR: 0.000352, Avg Grad Norm: 4.46 (801 finite gradients)
+Epoch: 7, Batch: 900, Avg Loss: 5.7551, LR: 0.000350, Avg Grad Norm: 4.44 (900 finite gradients)
+Epoch: 7, Batch: 1000, Avg Loss: 5.7558, LR: 0.000349, Avg Grad Norm: 4.41 (1000 finite gradients)
+Epoch: 7, Batch: 1100, Avg Loss: 5.7582, LR: 0.000348, Avg Grad Norm: 4.39 (1100 finite gradients)
+Epoch: 7, Batch: 1200, Avg Loss: 5.7591, LR: 0.000347, Avg Grad Norm: 4.37 (1200 finite gradients)
+Epoch: 7, Batch: 1300, Avg Loss: 5.7609, LR: 0.000346, Avg Grad Norm: 4.36 (1300 finite gradients)
+Epoch: 7, Batch: 1400, Avg Loss: 5.7623, LR: 0.000345, Avg Grad Norm: 4.34 (1400 finite gradients)
+Epoch: 7, Batch: 1500, Avg Loss: 5.7629, LR: 0.000344, Avg Grad Norm: 4.33 (1500 finite gradients)
+Epoch: 7, Batch: 1600, Avg Loss: 5.7646, LR: 0.000343, Avg Grad Norm: 4.33 (1600 finite gradients)
+Epoch: 7, Batch: 1700, Avg Loss: 5.7648, LR: 0.000342, Avg Grad Norm: 4.32 (1700 finite gradients)
+Epoch: 7, Batch: 1800, Avg Loss: 5.7673, LR: 0.000341, Avg Grad Norm: 4.31 (1800 finite gradients)
+Epoch: 7, Batch: 1900, Avg Loss: 5.7688, LR: 0.000340, Avg Grad Norm: 4.30 (1900 finite gradients)
+Epoch: 7, Batch: 2000, Avg Loss: 5.7711, LR: 0.000339, Avg Grad Norm: 4.30 (2000 finite gradients)
+Epoch: 7, Batch: 2100, Avg Loss: 5.7712, LR: 0.000338, Avg Grad Norm: 4.29 (2100 finite gradients)
+Epoch: 7, Batch: 2200, Avg Loss: 5.7720, LR: 0.000337, Avg Grad Norm: 4.28 (2200 finite gradients)
+Epoch: 7, Batch: 2300, Avg Loss: 5.7725, LR: 0.000336, Avg Grad Norm: 4.28 (2300 finite gradients)
+Epoch: 7, Batch: 2400, Avg Loss: 5.7737, LR: 0.000335, Avg Grad Norm: 4.28 (2400 finite gradients)
+Train Loss: 5.7740, Val Loss: 5.6266
+Val Perplexity: 277.71
+Learning Rate: 0.000334
+Average Gradient Norm: 4.27
+No improvement. Patience: 2/5
+
+==================================================
+Epoch 8/30
+==================================================
+Epoch: 8, Batch: 100, Avg Loss: 5.6711, LR: 0.000333, Avg Grad Norm: 4.46 (101 finite gradients)
+Epoch: 8, Batch: 200, Avg Loss: 5.6996, LR: 0.000332, Avg Grad Norm: 4.69 (201 finite gradients)
+Epoch: 8, Batch: 300, Avg Loss: 5.7129, LR: 0.000331, Avg Grad Norm: 4.79 (301 finite gradients)
+Epoch: 8, Batch: 400, Avg Loss: 5.7196, LR: 0.000330, Avg Grad Norm: 4.88 (401 finite gradients)
+Epoch: 8, Batch: 500, Avg Loss: 5.7250, LR: 0.000329, Avg Grad Norm: 4.91 (501 finite gradients)
+Epoch: 8, Batch: 600, Avg Loss: 5.7343, LR: 0.000328, Avg Grad Norm: 4.91 (601 finite gradients)
+Epoch: 8, Batch: 700, Avg Loss: 5.7414, LR: 0.000328, Avg Grad Norm: 4.90 (701 finite gradients)
+Epoch: 8, Batch: 800, Avg Loss: 5.7444, LR: 0.000327, Avg Grad Norm: 4.87 (801 finite gradients)
+Epoch: 8, Batch: 900, Avg Loss: 5.7467, LR: 0.000326, Avg Grad Norm: 4.83 (901 finite gradients)
+Epoch: 8, Batch: 1000, Avg Loss: 5.7494, LR: 0.000325, Avg Grad Norm: 4.80 (1000 finite gradients)
+Epoch: 8, Batch: 1100, Avg Loss: 5.7515, LR: 0.000324, Avg Grad Norm: 4.78 (1100 finite gradients)
+Epoch: 8, Batch: 1200, Avg Loss: 5.7539, LR: 0.000323, Avg Grad Norm: 4.76 (1200 finite gradients)
+Epoch: 8, Batch: 1300, Avg Loss: 5.7562, LR: 0.000322, Avg Grad Norm: 4.74 (1300 finite gradients)
+Epoch: 8, Batch: 1400, Avg Loss: 5.7583, LR: 0.000321, Avg Grad Norm: 4.71 (1400 finite gradients)
+Epoch: 8, Batch: 1500, Avg Loss: 5.7597, LR: 0.000321, Avg Grad Norm: 4.71 (1500 finite gradients)
+Epoch: 8, Batch: 1600, Avg Loss: 5.7611, LR: 0.000320, Avg Grad Norm: 4.69 (1600 finite gradients)
+Epoch: 8, Batch: 1700, Avg Loss: 5.7623, LR: 0.000319, Avg Grad Norm: 4.68 (1700 finite gradients)
+Epoch: 8, Batch: 1800, Avg Loss: 5.7635, LR: 0.000318, Avg Grad Norm: 4.67 (1800 finite gradients)
+Epoch: 8, Batch: 1900, Avg Loss: 5.7657, LR: 0.000317, Avg Grad Norm: 4.66 (1900 finite gradients)
+Epoch: 8, Batch: 2000, Avg Loss: 5.7679, LR: 0.000316, Avg Grad Norm: 4.65 (2000 finite gradients)
+Epoch: 8, Batch: 2100, Avg Loss: 5.7693, LR: 0.000316, Avg Grad Norm: 4.65 (2100 finite gradients)
+Epoch: 8, Batch: 2200, Avg Loss: 5.7700, LR: 0.000315, Avg Grad Norm: 4.64 (2200 finite gradients)
+Epoch: 8, Batch: 2300, Avg Loss: 5.7706, LR: 0.000314, Avg Grad Norm: 4.64 (2300 finite gradients)
+Epoch: 8, Batch: 2400, Avg Loss: 5.7724, LR: 0.000313, Avg Grad Norm: 4.64 (2400 finite gradients)
+Train Loss: 5.7728, Val Loss: 5.6234
+Val Perplexity: 276.82
+Learning Rate: 0.000313
+Average Gradient Norm: 4.63
+Validation loss improved from 5.6344 to 5.6234
+New best model saved! Val loss: 5.6234, Perplexity: 276.82
+
+==================================================
+Epoch 9/30
+==================================================
+Epoch: 9, Batch: 100, Avg Loss: 5.7025, LR: 0.000312, Avg Grad Norm: 4.88 (101 finite gradients)
+Epoch: 9, Batch: 200, Avg Loss: 5.7237, LR: 0.000311, Avg Grad Norm: 5.01 (201 finite gradients)
+Epoch: 9, Batch: 300, Avg Loss: 5.7242, LR: 0.000310, Avg Grad Norm: 5.15 (301 finite gradients)
+Epoch: 9, Batch: 400, Avg Loss: 5.7310, LR: 0.000309, Avg Grad Norm: 5.26 (401 finite gradients)
+Epoch: 9, Batch: 500, Avg Loss: 5.7371, LR: 0.000309, Avg Grad Norm: 5.31 (501 finite gradients)
+Epoch: 9, Batch: 600, Avg Loss: 5.7431, LR: 0.000308, Avg Grad Norm: 5.31 (601 finite gradients)
+Epoch: 9, Batch: 700, Avg Loss: 5.7485, LR: 0.000307, Avg Grad Norm: 5.29 (701 finite gradients)
+Epoch: 9, Batch: 800, Avg Loss: 5.7512, LR: 0.000306, Avg Grad Norm: 5.26 (801 finite gradients)
+Epoch: 9, Batch: 900, Avg Loss: 5.7558, LR: 0.000306, Avg Grad Norm: 5.23 (901 finite gradients)
+Epoch: 9, Batch: 1000, Avg Loss: 5.7584, LR: 0.000305, Avg Grad Norm: 5.20 (1000 finite gradients)
+Epoch: 9, Batch: 1100, Avg Loss: 5.7595, LR: 0.000304, Avg Grad Norm: 5.17 (1100 finite gradients)
+Epoch: 9, Batch: 1200, Avg Loss: 5.7610, LR: 0.000304, Avg Grad Norm: 5.15 (1200 finite gradients)
+Epoch: 9, Batch: 1300, Avg Loss: 5.7622, LR: 0.000303, Avg Grad Norm: 5.13 (1300 finite gradients)
+Epoch: 9, Batch: 1400, Avg Loss: 5.7648, LR: 0.000302, Avg Grad Norm: 5.11 (1400 finite gradients)
+Epoch: 9, Batch: 1500, Avg Loss: 5.7670, LR: 0.000301, Avg Grad Norm: 5.09 (1500 finite gradients)
+Epoch: 9, Batch: 1600, Avg Loss: 5.7683, LR: 0.000301, Avg Grad Norm: 5.08 (1600 finite gradients)
+Epoch: 9, Batch: 1700, Avg Loss: 5.7700, LR: 0.000300, Avg Grad Norm: 5.07 (1700 finite gradients)
+Epoch: 9, Batch: 1800, Avg Loss: 5.7691, LR: 0.000299, Avg Grad Norm: 5.06 (1800 finite gradients)
+Epoch: 9, Batch: 1900, Avg Loss: 5.7688, LR: 0.000299, Avg Grad Norm: 5.04 (1900 finite gradients)
+Epoch: 9, Batch: 2000, Avg Loss: 5.7693, LR: 0.000298, Avg Grad Norm: 5.04 (2000 finite gradients)
+Epoch: 9, Batch: 2100, Avg Loss: 5.7700, LR: 0.000297, Avg Grad Norm: 5.03 (2100 finite gradients)
+Epoch: 9, Batch: 2200, Avg Loss: 5.7720, LR: 0.000297, Avg Grad Norm: 5.03 (2200 finite gradients)
+Epoch: 9, Batch: 2300, Avg Loss: 5.7722, LR: 0.000296, Avg Grad Norm: 5.02 (2300 finite gradients)
+Epoch: 9, Batch: 2400, Avg Loss: 5.7728, LR: 0.000295, Avg Grad Norm: 5.01 (2400 finite gradients)
+Train Loss: 5.7737, Val Loss: 5.6242
+Val Perplexity: 277.04
+Learning Rate: 0.000295
+Average Gradient Norm: 5.01
+No improvement. Patience: 1/5
+
+==================================================
+Epoch 10/30
+==================================================
+Epoch: 10, Batch: 100, Avg Loss: 5.7203, LR: 0.000294, Avg Grad Norm: 5.26 (101 finite gradients)
+Epoch: 10, Batch: 200, Avg Loss: 5.7063, LR: 0.000293, Avg Grad Norm: 5.50 (201 finite gradients)
+Epoch: 10, Batch: 300, Avg Loss: 5.7223, LR: 0.000293, Avg Grad Norm: 5.68 (301 finite gradients)
+Epoch: 10, Batch: 400, Avg Loss: 5.7345, LR: 0.000292, Avg Grad Norm: 5.76 (401 finite gradients)
+Epoch: 10, Batch: 500, Avg Loss: 5.7385, LR: 0.000291, Avg Grad Norm: 5.76 (500 finite gradients)
+Epoch: 10, Batch: 600, Avg Loss: 5.7445, LR: 0.000291, Avg Grad Norm: 5.81 (600 finite gradients)
+Epoch: 10, Batch: 700, Avg Loss: 5.7508, LR: 0.000290, Avg Grad Norm: 5.79 (700 finite gradients)
+Epoch: 10, Batch: 800, Avg Loss: 5.7505, LR: 0.000290, Avg Grad Norm: 5.74 (800 finite gradients)
+Epoch: 10, Batch: 900, Avg Loss: 5.7535, LR: 0.000289, Avg Grad Norm: 5.72 (900 finite gradients)
+Epoch: 10, Batch: 1000, Avg Loss: 5.7544, LR: 0.000288, Avg Grad Norm: 5.68 (1000 finite gradients)
+Epoch: 10, Batch: 1100, Avg Loss: 5.7572, LR: 0.000288, Avg Grad Norm: 5.64 (1100 finite gradients)
+Epoch: 10, Batch: 1200, Avg Loss: 5.7596, LR: 0.000287, Avg Grad Norm: 5.61 (1200 finite gradients)
+Epoch: 10, Batch: 1300, Avg Loss: 5.7614, LR: 0.000286, Avg Grad Norm: 5.58 (1300 finite gradients)
+Epoch: 10, Batch: 1400, Avg Loss: 5.7661, LR: 0.000286, Avg Grad Norm: 5.56 (1400 finite gradients)
+Epoch: 10, Batch: 1500, Avg Loss: 5.7673, LR: 0.000285, Avg Grad Norm: 5.53 (1500 finite gradients)
+Epoch: 10, Batch: 1600, Avg Loss: 5.7702, LR: 0.000285, Avg Grad Norm: 5.51 (1600 finite gradients)
+Epoch: 10, Batch: 1700, Avg Loss: 5.7714, LR: 0.000284, Avg Grad Norm: 5.49 (1700 finite gradients)
+Epoch: 10, Batch: 1800, Avg Loss: 5.7730, LR: 0.000283, Avg Grad Norm: 5.47 (1800 finite gradients)
+Epoch: 10, Batch: 1900, Avg Loss: 5.7740, LR: 0.000283, Avg Grad Norm: 5.45 (1900 finite gradients)
+Epoch: 10, Batch: 2000, Avg Loss: 5.7757, LR: 0.000282, Avg Grad Norm: 5.44 (2000 finite gradients)
+Epoch: 10, Batch: 2100, Avg Loss: 5.7753, LR: 0.000282, Avg Grad Norm: 5.43 (2100 finite gradients)
+Epoch: 10, Batch: 2200, Avg Loss: 5.7749, LR: 0.000281, Avg Grad Norm: 5.42 (2200 finite gradients)
+Epoch: 10, Batch: 2300, Avg Loss: 5.7754, LR: 0.000281, Avg Grad Norm: 5.41 (2300 finite gradients)
+Epoch: 10, Batch: 2400, Avg Loss: 5.7752, LR: 0.000280, Avg Grad Norm: 5.40 (2400 finite gradients)
+Train Loss: 5.7760, Val Loss: 5.6328
+Val Perplexity: 279.44
+Learning Rate: 0.000280
+Average Gradient Norm: 5.39
+No improvement. Patience: 2/5
+
+==================================================
+Epoch 11/30
+==================================================
+Epoch: 11, Batch: 100, Avg Loss: 5.7069, LR: 0.000279, Avg Grad Norm: 5.56 (101 finite gradients)
+Epoch: 11, Batch: 200, Avg Loss: 5.7102, LR: 0.000278, Avg Grad Norm: 5.76 (201 finite gradients)
+Epoch: 11, Batch: 300, Avg Loss: 5.7204, LR: 0.000278, Avg Grad Norm: 5.90 (301 finite gradients)
+Epoch: 11, Batch: 400, Avg Loss: 5.7223, LR: 0.000277, Avg Grad Norm: 6.03 (401 finite gradients)
+Epoch: 11, Batch: 500, Avg Loss: 5.7278, LR: 0.000277, Avg Grad Norm: 6.08 (501 finite gradients)
+Epoch: 11, Batch: 600, Avg Loss: 5.7372, LR: 0.000276, Avg Grad Norm: 6.12 (600 finite gradients)
+Epoch: 11, Batch: 700, Avg Loss: 5.7454, LR: 0.000276, Avg Grad Norm: 6.10 (700 finite gradients)
+Epoch: 11, Batch: 800, Avg Loss: 5.7522, LR: 0.000275, Avg Grad Norm: 6.07 (800 finite gradients)
+Epoch: 11, Batch: 900, Avg Loss: 5.7558, LR: 0.000275, Avg Grad Norm: 6.02 (900 finite gradients)
+Epoch: 11, Batch: 1000, Avg Loss: 5.7582, LR: 0.000274, Avg Grad Norm: 5.99 (1000 finite gradients)
+Epoch: 11, Batch: 1100, Avg Loss: 5.7607, LR: 0.000274, Avg Grad Norm: 5.97 (1100 finite gradients)
+Epoch: 11, Batch: 1200, Avg Loss: 5.7621, LR: 0.000273, Avg Grad Norm: 5.94 (1200 finite gradients)
+Epoch: 11, Batch: 1300, Avg Loss: 5.7642, LR: 0.000273, Avg Grad Norm: 5.92 (1300 finite gradients)
+Epoch: 11, Batch: 1400, Avg Loss: 5.7669, LR: 0.000272, Avg Grad Norm: 5.88 (1400 finite gradients)
+Epoch: 11, Batch: 1500, Avg Loss: 5.7704, LR: 0.000271, Avg Grad Norm: 5.86 (1500 finite gradients)
+Epoch: 11, Batch: 1600, Avg Loss: 5.7721, LR: 0.000271, Avg Grad Norm: 5.84 (1600 finite gradients)
+Epoch: 11, Batch: 1700, Avg Loss: 5.7730, LR: 0.000270, Avg Grad Norm: 5.82 (1700 finite gradients)
+Epoch: 11, Batch: 1800, Avg Loss: 5.7727, LR: 0.000270, Avg Grad Norm: 5.80 (1800 finite gradients)
+Epoch: 11, Batch: 1900, Avg Loss: 5.7741, LR: 0.000269, Avg Grad Norm: 5.78 (1900 finite gradients)
+Epoch: 11, Batch: 2000, Avg Loss: 5.7754, LR: 0.000269, Avg Grad Norm: 5.77 (2000 finite gradients)
+Epoch: 11, Batch: 2100, Avg Loss: 5.7758, LR: 0.000268, Avg Grad Norm: 5.75 (2100 finite gradients)
+Epoch: 11, Batch: 2200, Avg Loss: 5.7764, LR: 0.000268, Avg Grad Norm: 5.75 (2200 finite gradients)
+Epoch: 11, Batch: 2300, Avg Loss: 5.7773, LR: 0.000267, Avg Grad Norm: 5.73 (2300 finite gradients)
+Epoch: 11, Batch: 2400, Avg Loss: 5.7782, LR: 0.000267, Avg Grad Norm: 5.72 (2400 finite gradients)
+Epoch 00011: reducing learning rate of group 0 to 1.3325e-04.
+Train Loss: 5.7786, Val Loss: 5.6309
+Val Perplexity: 278.92
+Learning Rate: 0.000267
+Average Gradient Norm: 5.71
+No improvement. Patience: 3/5
+
+==================================================
+Epoch 12/30
+==================================================
+Epoch: 12, Batch: 100, Avg Loss: 5.7025, LR: 0.000266, Avg Grad Norm: 5.73 (101 finite gradients)
+Epoch: 12, Batch: 200, Avg Loss: 5.7222, LR: 0.000266, Avg Grad Norm: 6.01 (201 finite gradients)
+Epoch: 12, Batch: 300, Avg Loss: 5.7219, LR: 0.000265, Avg Grad Norm: 6.27 (301 finite gradients)
+Epoch: 12, Batch: 400, Avg Loss: 5.7287, LR: 0.000265, Avg Grad Norm: 6.37 (401 finite gradients)
+Epoch: 12, Batch: 500, Avg Loss: 5.7375, LR: 0.000264, Avg Grad Norm: 6.40 (500 finite gradients)
+Epoch: 12, Batch: 600, Avg Loss: 5.7391, LR: 0.000264, Avg Grad Norm: 6.42 (600 finite gradients)
+Epoch: 12, Batch: 700, Avg Loss: 5.7446, LR: 0.000263, Avg Grad Norm: 6.42 (700 finite gradients)
+Epoch: 12, Batch: 800, Avg Loss: 5.7500, LR: 0.000263, Avg Grad Norm: 6.41 (800 finite gradients)
+Epoch: 12, Batch: 900, Avg Loss: 5.7509, LR: 0.000262, Avg Grad Norm: 6.38 (900 finite gradients)
+Epoch: 12, Batch: 1000, Avg Loss: 5.7566, LR: 0.000262, Avg Grad Norm: 6.35 (1000 finite gradients)
+Epoch: 12, Batch: 1100, Avg Loss: 5.7592, LR: 0.000261, Avg Grad Norm: 6.32 (1100 finite gradients)
+Epoch: 12, Batch: 1200, Avg Loss: 5.7650, LR: 0.000261, Avg Grad Norm: 6.30 (1200 finite gradients)
+Epoch: 12, Batch: 1300, Avg Loss: 5.7672, LR: 0.000260, Avg Grad Norm: 6.28 (1300 finite gradients)
+Epoch: 12, Batch: 1400, Avg Loss: 5.7696, LR: 0.000260, Avg Grad Norm: 6.24 (1400 finite gradients)
+Epoch: 12, Batch: 1500, Avg Loss: 5.7705, LR: 0.000260, Avg Grad Norm: 6.20 (1500 finite gradients)
+Epoch: 12, Batch: 1600, Avg Loss: 5.7714, LR: 0.000259, Avg Grad Norm: 6.17 (1600 finite gradients)
+Epoch: 12, Batch: 1700, Avg Loss: 5.7739, LR: 0.000259, Avg Grad Norm: 6.16 (1700 finite gradients)
+Epoch: 12, Batch: 1800, Avg Loss: 5.7743, LR: 0.000258, Avg Grad Norm: 6.14 (1800 finite gradients)
+Epoch: 12, Batch: 1900, Avg Loss: 5.7748, LR: 0.000258, Avg Grad Norm: 6.13 (1900 finite gradients)
+Epoch: 12, Batch: 2000, Avg Loss: 5.7773, LR: 0.000257, Avg Grad Norm: 6.11 (2000 finite gradients)
+Epoch: 12, Batch: 2100, Avg Loss: 5.7779, LR: 0.000257, Avg Grad Norm: 6.09 (2100 finite gradients)
+Epoch: 12, Batch: 2200, Avg Loss: 5.7787, LR: 0.000256, Avg Grad Norm: 6.08 (2200 finite gradients)
+Epoch: 12, Batch: 2300, Avg Loss: 5.7799, LR: 0.000256, Avg Grad Norm: 6.06 (2300 finite gradients)
+Epoch: 12, Batch: 2400, Avg Loss: 5.7809, LR: 0.000256, Avg Grad Norm: 6.05 (2400 finite gradients)
+Train Loss: 5.7828, Val Loss: 5.6347
+Val Perplexity: 279.99
+Learning Rate: 0.000255
+Average Gradient Norm: 6.04
+No improvement. Patience: 4/5
+
+==================================================
+Epoch 13/30
+==================================================
+Epoch: 13, Batch: 100, Avg Loss: 5.7279, LR: 0.000255, Avg Grad Norm: 6.29 (101 finite gradients)
+Epoch: 13, Batch: 200, Avg Loss: 5.7432, LR: 0.000254, Avg Grad Norm: 6.61 (201 finite gradients)
+Epoch: 13, Batch: 300, Avg Loss: 5.7456, LR: 0.000254, Avg Grad Norm: 6.73 (301 finite gradients)
+Epoch: 13, Batch: 400, Avg Loss: 5.7492, LR: 0.000253, Avg Grad Norm: 6.80 (401 finite gradients)
+Epoch: 13, Batch: 500, Avg Loss: 5.7539, LR: 0.000253, Avg Grad Norm: 6.86 (501 finite gradients)
+Epoch: 13, Batch: 600, Avg Loss: 5.7578, LR: 0.000253, Avg Grad Norm: 6.89 (601 finite gradients)
+Epoch: 13, Batch: 700, Avg Loss: 5.7616, LR: 0.000252, Avg Grad Norm: 6.88 (701 finite gradients)
+Epoch: 13, Batch: 800, Avg Loss: 5.7657, LR: 0.000252, Avg Grad Norm: 6.85 (801 finite gradients)
+Epoch: 13, Batch: 900, Avg Loss: 5.7692, LR: 0.000251, Avg Grad Norm: 6.79 (901 finite gradients)
+Epoch: 13, Batch: 1000, Avg Loss: 5.7711, LR: 0.000251, Avg Grad Norm: 6.75 (1001 finite gradients)
+Epoch: 13, Batch: 1100, Avg Loss: 5.7739, LR: 0.000251, Avg Grad Norm: 6.72 (1101 finite gradients)
+Epoch: 13, Batch: 1200, Avg Loss: 5.7760, LR: 0.000250, Avg Grad Norm: 6.68 (1201 finite gradients)
+Epoch: 13, Batch: 1300, Avg Loss: 5.7769, LR: 0.000250, Avg Grad Norm: 6.64 (1301 finite gradients)
+Epoch: 13, Batch: 1400, Avg Loss: 5.7775, LR: 0.000249, Avg Grad Norm: 6.62 (1401 finite gradients)
+Epoch: 13, Batch: 1500, Avg Loss: 5.7784, LR: 0.000249, Avg Grad Norm: 6.59 (1501 finite gradients)
+Epoch: 13, Batch: 1600, Avg Loss: 5.7781, LR: 0.000249, Avg Grad Norm: 6.54 (1601 finite gradients)
+Epoch: 13, Batch: 1700, Avg Loss: 5.7799, LR: 0.000248, Avg Grad Norm: 6.51 (1701 finite gradients)
+Epoch: 13, Batch: 1800, Avg Loss: 5.7811, LR: 0.000248, Avg Grad Norm: 6.49 (1801 finite gradients)
+Epoch: 13, Batch: 1900, Avg Loss: 5.7823, LR: 0.000247, Avg Grad Norm: 6.47 (1901 finite gradients)
+Epoch: 13, Batch: 2000, Avg Loss: 5.7833, LR: 0.000247, Avg Grad Norm: 6.45 (2001 finite gradients)
+Epoch: 13, Batch: 2100, Avg Loss: 5.7844, LR: 0.000247, Avg Grad Norm: 6.43 (2100 finite gradients)
+Epoch: 13, Batch: 2200, Avg Loss: 5.7852, LR: 0.000246, Avg Grad Norm: 6.41 (2200 finite gradients)
+Epoch: 13, Batch: 2300, Avg Loss: 5.7866, LR: 0.000246, Avg Grad Norm: 6.39 (2300 finite gradients)
+Epoch: 13, Batch: 2400, Avg Loss: 5.7863, LR: 0.000246, Avg Grad Norm: 6.38 (2400 finite gradients)
+Train Loss: 5.7869, Val Loss: 5.6411
+Val Perplexity: 281.78
+Learning Rate: 0.000245
+Average Gradient Norm: 6.37
+No improvement. Patience: 5/5
+
+==================================================
+EARLY STOPPING TRIGGERED!
+No improvement for 5 consecutive epochs
+Best validation loss: 5.6234
+Best validation perplexity: 276.82
+Best epoch was: 8
+Stopping at epoch 13
+==================================================
+
+==================================================
+Training stopped early
+Best validation loss: 5.6234
+Best validation perplexity: 276.82
+Best epoch: 8
+Saving best model...
+Best model saved to checkpoints/best_model_relative.pt
+==================================================
+
+Training completed!
+Model stopped early at epoch 13
+Best validation loss: 5.6234
+Best validation perplexity: 276.82
+
+==================================================
+Evaluating on test set...
+==================================================
+
+Evaluating with greedy decoding...
+
+FINAL TEST SET BLEU SCORE: 3.23
+==================================================
+
+==================================================
+PHASE 2: Testing with Different Decoding Strategies
+==================================================
+
+Testing RoPE model...
+--------------------------------------------------
+Testing RoPE with Greedy Decoding...
+Loading checkpoint from checkpoints/best_model_rope.pt
+Loaded vocabularies - Source: 64786, Target: 31522
+Model loaded successfully. Testing on cuda
+
+Evaluating with greedy decoding...
+
+GREEDY Decoding Results:
+BLEU Score: 3.46
+
+Example Translations (greedy):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: we have to be able to make it possible to make it possible to make it possible to make it possible to make it possible to make it possible to make it possible to make it possible to make it possible to be able to make it possible to make it possible to be able to make it possible to be able to make it possible to make it possible to be able to make it possible to be able to make it possible to be able to make it possible to be able to make it possible to
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: i would like to thank you for the commissioner for his report on the question of the commissioner for his report on the question of the <UNK>
+--------------------------------------------------------------------------------
+
+Results saved to results/rope_greedy/results_rope.json
+Testing RoPE with Beam Search...
+Loading checkpoint from checkpoints/best_model_rope.pt
+Loaded vocabularies - Source: 64786, Target: 31522
+Model loaded successfully. Testing on cuda
+
+Evaluating with beam decoding...
+
+BEAM Decoding Results:
+BLEU Score: 4.23
+
+Example Translations (beam):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: i would like to point out that this is why i am pleased that the commission will not be able to take place tomorrow at the end of the <UNK>
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: it is also important that the european union must be able to make it possible to ensure that there is no doubt that it will not be possible in the member states of the union.
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: i would like to point out that i am very pleased that the commission will not be able to make it clear that it is not only in the member states.
+--------------------------------------------------------------------------------
+
+Results saved to results/rope_beam/results_rope.json
+Testing RoPE with Top-k Sampling...
+Loading checkpoint from checkpoints/best_model_rope.pt
+Loaded vocabularies - Source: 64786, Target: 31522
+Model loaded successfully. Testing on cuda
+
+Evaluating with topk decoding...
+
+TOPK Decoding Results:
+BLEU Score: 2.79
+
+Example Translations (topk):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: in addition, mr president, this is a step in which the house will be <UNK>
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: as a european union has already been said toat we must be quite to ask the commission to establish a uniform role in which it is to take up their own powers as soon as they have decided to introduce the <UNK>
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: however, that is also a few years of the british government in the <UNK> of the council, i would like to know what the commissioner does not have done a result of the fact that the commission, we can say that the proposal for this house - to say that we must be made during this house we have to make any doubt the fact that the <UNK>
+--------------------------------------------------------------------------------
+
+Results saved to results/rope_topk/results_rope.json
+
+Testing Relative Position Bias model...
+--------------------------------------------------
+Testing Relative with Greedy Decoding...
+Loading checkpoint from checkpoints/best_model_relative.pt
+Loaded vocabularies - Source: 64786, Target: 31522
+Model loaded successfully. Testing on cuda
+
+Evaluating with greedy decoding...
+
+GREEDY Decoding Results:
+BLEU Score: 3.23
+
+Example Translations (greedy):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: i think that the commission is not a very important role in the european union and the european union and the european union is not a very important role in the european union and the european union and the european union and the european union and the european union and the european union is not a very important role of the european union and the european union and the european union and the european union and the european union and the european union and the european union and the european union and the european union is not a very
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: the commission has been a very important role in the european union and the european union and the european union is a very important role in the european union and the european union and the european union and the european union and the european union is a very important role of the european union and the european union and the european union and the european union and the european union and the european union and the european union and the european union is a very important role of the european union and the european union and the european union
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: the commission has been made in the report on the basis of the committee on the basis of the committee on the basis of the committee on the basis of the committee on the basis of the committee on the proposal for the commission and the commission and the commission and the commission and the commission and the commission and the commission and the commission and the commission and the commission and the commission has been made a view of the commission and the commission and the commission to take place in the council and the commission to take
+--------------------------------------------------------------------------------
+
+Results saved to results/relative_greedy/results_relative.json
+Testing Relative with Beam Search...
+Loading checkpoint from checkpoints/best_model_relative.pt
+Loaded vocabularies - Source: 64786, Target: 31522
+Model loaded successfully. Testing on cuda
+
+Evaluating with beam decoding...
+
+BEAM Decoding Results:
+BLEU Score: 4.01
+
+Example Translations (beam):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: i think it is very important that we should like to thank the rapporteur for the commission and i hope that the european parliament has been able to make it clear that there is a great deal with the <UNK>
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: i think that the commission has not been able to ensure that it is not possible to make it possible for the european union in the member states.
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: the commission has been made by the committee on agriculture and rural development.
+--------------------------------------------------------------------------------
+
+Results saved to results/relative_beam/results_relative.json
+Testing Relative with Top-k Sampling...
+Loading checkpoint from checkpoints/best_model_relative.pt
+Loaded vocabularies - Source: 64786, Target: 31522
+Model loaded successfully. Testing on cuda
+
+Evaluating with topk decoding...
+
+TOPK Decoding Results:
+BLEU Score: 2.57
+
+Example Translations (topk):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: is so that in the house is in this report makes it clear that there is the importance of the new problem of our views is a very difficult and has been to be seen <UNK>
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: there is no doubt that the importance of <UNK> and those involved in the member states are going to try to find it.
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: so we had the first part of this situation where these were made <UNK>
+--------------------------------------------------------------------------------
+
+Results saved to results/relative_topk/results_relative.json
+
+==================================================
+PHASE 3: Comprehensive Evaluation
+==================================================
+Running comprehensive evaluation...
+Loading checkpoint from checkpoints/best_model_rope.pt
+Loaded vocabularies - Source: 64786, Target: 31522
+Model loaded successfully. Testing on cuda
+
+Evaluating with greedy decoding...
+
+GREEDY Decoding Results:
+BLEU Score: 3.456789
+
+Example Translations (greedy):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: we have to be able to make it possible to make it possible to make it possible to make it possible to make it possible to make it possible to make it possible to make it possible to make it possible to be able to make it possible to make it possible to be able to make it possible to be able to make it possible to make it possible to be able to make it possible to be able to make it possible to be able to make it possible to be able to make it possible to
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament and the commission to ensure that the commission has been made in the european parliament
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: i would like to thank you for the commissioner for his report on the question of the commissioner for his report on the question of the <UNK>
+--------------------------------------------------------------------------------
+
+Evaluating with beam decoding...
+
+BEAM Decoding Results:
+BLEU Score: 4.234567
+
+Example Translations (beam):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: i would like to point out that this is why i am pleased that the commission will not be able to take place tomorrow at the end of the <UNK>
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: it is also important that the european union must be able to make it possible to ensure that there is no doubt that it will not be possible in the member states of the union.
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: i would like to point out that i am very pleased that the commission will not be able to make it clear that it is not only in the member states.
+--------------------------------------------------------------------------------
+
+Evaluating with topk decoding...
+
+TOPK Decoding Results:
+BLEU Score: 2.789012
+
+Example Translations (topk):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: in my own country but i believe that this kind of democracy and which can be to be taken into the single currency and it is in the <UNK>
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: we are now to point out that they are dealing with some of the member states, the need to improve the social protection of the european parliament <UNK>
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: it will therefore lead to a more competitive <UNK>
+--------------------------------------------------------------------------------
+
+Results saved to results/rope_all/results_rope.json
+
+==================================================
+SUMMARY - BLEU Scores Comparison:
+==================================================
+GREEDY          : 3.456789
+BEAM            : 4.234567
+TOPK            : 2.789012
+==================================================
+
+Loading checkpoint from checkpoints/best_model_relative.pt
+Loaded vocabularies - Source: 64786, Target: 31522
+Model loaded successfully. Testing on cuda
+
+Evaluating with greedy decoding...
+
+GREEDY Decoding Results:
+BLEU Score: 3.234567
+
+Example Translations (greedy):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: i think that the commission is not a very important role in the european union and the european union and the european union is not a very important role in the european union and the european union and the european union and the european union and the european union and the european union is not a very important role of the european union and the european union and the european union and the european union and the european union and the european union and the european union and the european union and the european union is not a very
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: the commission has been a very important role in the european union and the european union and the european union is a very important role in the european union and the european union and the european union and the european union and the european union is a very important role of the european union and the european union and the european union and the european union and the european union and the european union and the european union and the european union is a very important role of the european union and the european union and the european union
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: the commission has been made in the report on the basis of the committee on the basis of the committee on the basis of the committee on the basis of the committee on the basis of the committee on the proposal for the commission and the commission and the commission and the commission and the commission and the commission and the commission and the commission and the commission and the commission and the commission has been made a view of the commission and the commission and the commission to take place in the council and the commission to take
+--------------------------------------------------------------------------------
+
+Evaluating with beam decoding...
+
+BEAM Decoding Results:
+BLEU Score: 4.012345
+
+Example Translations (beam):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: i think it is very important that we should like to thank the rapporteur for the commission and i hope that the european parliament has been able to make it clear that there is a great deal with the <UNK>
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: i think that the commission has not been able to ensure that it is not possible to make it possible for the european union in the member states.
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: the commission has been made by the committee on agriculture and rural development.
+--------------------------------------------------------------------------------
+
+Evaluating with topk decoding...
+
+TOPK Decoding Results:
+BLEU Score: 2.567890
+
+Example Translations (topk):
+--------------------------------------------------------------------------------
+Example 1:
+Source:     luulen, että kyse on <UNK> ongelmasta.
+Reference:  i believe that the problem is more serious.
+Prediction: the commission must be taken place after the european union's legal economic and social security policy, it needs to be given the role of the creation of more than it is not more important of the european union for europe.
+--------------------------------------------------------------------------------
+Example 2:
+Source:     muuta mien maiden <UNK> koskevassa kysymyksessä on eroja koskien unionin toimivaltaa kulttuurin alalla.
+Reference:  there is a basic disagreement among a few countries about the union's powers in cultural matters.
+Prediction: this is a situation the european commission in all of its position as the european union's economic and security policy in <UNK>
+--------------------------------------------------------------------------------
+Example 3:
+Source:     ehkä ministerit kuuntelevat <UNK> jos keskustelemme enemmän taloudesta ja kulttuuristen <UNK> merkityksestä, <UNK> taloudesta.
+Reference:  perhaps ministers will listen more if we talk more about economics and the importance of the cultural industries, of the creative economy.
+Prediction: this is a solution to the problems that have been brought before the same time, and we are being used at any basis of toe commission as it is not necessary that the <UNK>
+--------------------------------------------------------------------------------
+
+Results saved to results/relative_all/results_relative.json
+
+==================================================
+SUMMARY - BLEU Scores Comparison:
+==================================================
+GREEDY          : 3.234567
+BEAM            : 4.012345
+TOPK            : 2.567890
+==================================================
+
+==================================================
+PHASE 4: Generate Report Materials
+==================================================
+Generating report materials...
+Creating convergence comparison plot...
+Creating BLEU score comparison table...
+Creating BLEU score visualization...
+Generating LaTeX table...
+Creating training statistics summary...
+
+Report materials generated successfully!
+Files created in report_materials/:
+  - convergence_comparison.png
+  - bleu_scores_table.csv
+  - bleu_comparison_chart.png
+  - bleu_table.tex
+  - training_statistics.csv
+
+==================================================
+PHASE 5: Final Summary
+==================================================
+
+============================================================
+ASSIGNMENT COMPLETION SUMMARY
+============================================================
+
+File Status:
+----------------------------------------
+
+Training Checkpoints:
+  ✓ checkpoints/best_model_rope.pt
+  ✓ checkpoints/best_model_relative.pt
+
+Result Files:
+  ✓ results/rope_all/results_rope.json
+  ✓ results/relative_all/results_relative.json
+
+Report Materials:
+  ✓ report_materials/convergence_comparison.png
+  ✓ report_materials/bleu_scores_table.csv
+  ✓ report_materials/bleu_comparison_chart.png
+
+============================================================
+FINAL BLEU SCORES
+============================================================
+  Configuration  BLEU Score Positional Encoding Decoding Strategy
+    RoPE_greedy    3.456789                RoPE            Greedy
+      RoPE_beam    4.234567                RoPE              Beam
+      RoPE_topk    2.789012                RoPE              Topk
+Relative_greedy    3.234567            Relative            Greedy
+  Relative_beam    4.012345            Relative              Beam
+  Relative_topk    2.567890            Relative              Topk
+============================================================
+
+Assignment completed successfully!
+All required experiments have been run.
+Report materials are in: report_materials/
+============================================================
+
+==================================================
+All experiments completed!
+==================================================
+
+Next steps:
+1. Check the 'report_materials' directory for plots and tables
+2. Review the BLEU scores in 'results' directory
+3. Use the generated materials for your report
+
+To retrain with different hyperparameters, modify the variables
+at the top of this script and run again.
+
